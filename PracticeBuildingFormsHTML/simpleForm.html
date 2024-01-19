@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Form</title>
+</head>
+<body>
+    <form id="music survey">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="DOB">Date of Birth:</label><br>
+            <input type="date" id="DOB" name="DOB"><br><br>
+            <label for="email">Email (optional if you want to recieve the results of the survey):</label><br>
+            <input type="email" id="email" name="email">
+        </fieldset><br>
+        <fieldset>
+            <legend>Music Survey</legend>
+            <p>Please select your favorite genre of music:</p>
+                <input type="radio" id="rock" name="genre" value="rock">
+                <label for="rock">Rock</label><br>
+                <input type="radio" id="pop" name="genre" value="pop">
+                <label for="pop">Pop</label><br>
+                <input type="radio" id="jazz" name="genre" value="jazz">
+                <label for="jazz">Jazz</label><br>
+                <input type="radio" id="country" name="genre" value="country">
+                <label for="country">Country</label><br>
+                <input type="radio" id="hip hop" name="genre" value="hip hop">
+                <label for="hip hop">Hip Hop</label><br>
+                <input type="radio" id="classical" name="genre" value="classical">
+                <label for="classical">Classical</label><br>
+                <input type="radio" id="other" name="genre" value="other">
+                <label for="other">Other</label><br><br>
+            <label for="listeningDevice">Where do you listen to music the most?</label><br>
+            <select id="listeningDevice" name="listeningDevice">
+                <option value="Phone">Phone</option> 
+                <option value="Car Radio">Car Radio</option> 
+                <option value="Home Speaker">Home Speaker</option>
+                <option value="Other">Other</option>
+            </select>
+            <p>Do you play any musical instruments? (You can select more than one option by holding down control on a PC or command key on a Mac while selecting different options.)</p>
+            <label for="instruments">Select Instruments:</label><br>
+            <select id="instruments" name="instruments" size="5" multiple="multiple">
+                <option value="Guitar">Guitar</option> 
+                <option value="Piano">Piano</option> 
+                <option value="Drums">Drums</option>
+                <option value="Bass">Bass</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+            <label for="experience">Describe your favorite concert experience:</label><br>
+            <textarea id="experience" name="experience" rows="5" cols="40"></textarea><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
