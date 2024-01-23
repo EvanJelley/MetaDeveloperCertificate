@@ -2,15 +2,16 @@
 <html>
 <head>
     <title>Simple Form</title>
+    <link rel="stylesheet" type="text/css" href="simpleForm.css">
 </head>
 <body>
     <form id="music survey">
         <fieldset>
             <legend>Personal Information</legend>
             <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br><br>
+            <input type="text" id="name" name="name"><br>
             <label for="DOB">Date of Birth:</label><br>
-            <input type="date" id="DOB" name="DOB"><br><br>
+            <input type="date" id="DOB" name="DOB"><br>
             <label for="email">Email (optional if you want to recieve the results of the survey):</label><br>
             <input type="email" id="email" name="email">
         </fieldset><br>
@@ -38,7 +39,7 @@
                 <option value="Home Speaker">Home Speaker</option>
                 <option value="Other">Other</option>
             </select>
-            <p>Do you play any musical instruments? (You can select more than one option by holding down control on a PC or command key on a Mac while selecting different options.)</p>
+            <p>Do you play any musical instruments? <span id="extra-info">(You can select more than one option by holding down control on a PC or command key on a Mac while selecting different options.)</span></p>
             <label for="instruments">Select Instruments:</label><br>
             <select id="instruments" name="instruments" size="5" multiple="multiple">
                 <option value="Guitar">Guitar</option> 
@@ -49,7 +50,7 @@
             </select><br><br>
             <label for="experience">Describe your favorite concert experience:</label><br>
             <textarea id="experience" name="experience" rows="5" cols="40"></textarea><br>
-            <input type="submit" value="Submit">
+            <input id="submit" type="submit" value="Submit">
         </fieldset>
     </form>
 </body>
