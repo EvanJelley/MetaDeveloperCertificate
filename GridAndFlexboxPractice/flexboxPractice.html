@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Nav</title>
+    <link rel="stylesheet" href="flexboxPractice.css">
+</head>
+
+<body>
+    <div class="container">
+        <img class="icon" src="searchIcon.webp" alt="Sample image" style="width: 17px; height: 17px;">
+        <input class="searchBox" type="search" name="search" placeholder="Search">
+        <input type="submit" value="Search" class="searchButton">
+    </div>
+
+    <nav class="nav">
+        <ul class="navList">
+            <li class="navItem"><a href="#" class="navLink">Home</a></li>
+            <li class="navItem"><a href="#" class="navLink">CulinaryBlog</a></li>
+            <li class="navItem"><a href="#" class="navLink">Menu</a></li>
+            <li class="navItem"><a href="#" class="navLink">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="row">
+        <div class="label">Preferred Dishes</div>
+        <div class="tableContainer">
+            <div class="dish pasta" style="flex-basis: 35%;">35%</div>
+            <div class="dish pizza" style="flex-basis: 50%;">50%</div>
+            <div class="dish burrito" style="flex-basis: 15%;">15%</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+/* Clear browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Search Bar */
+.container {
+    display: inline-flex;
+    flex: 1 1 300px;
+    border-radius: 10px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.icon {
+    padding: 0.8rem;
+}
+
+.searchBox {
+    border: 0;
+    flex: 1;
+}
+
+.searchButton {
+    color: white;
+    background: #0f4a8a;
+    border: 0;
+    padding: .8rem;
+    border-radius: 8px;
+}
+
+/* Nav Bar */
+.navList {
+    background-color: #2b2d42;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+}
+
+.navList li {
+    list-style-type: none;
+}
+
+.navList a {
+    display: inline-block;
+    padding: 25px;
+    margin: 0 25px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.navList a:hover {
+    background-color: lightsteelblue;
+    border-radius: 10px;
+}
+
+/* Dish Chart */
+.row {
+    display: flex;
+    align-items: stretch;
+}
+
+.row .label {
+    flex: 0 0 auto;
+    font-family: sans-serif;
+}
+
+.row .tableContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.row .dish {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+}
+
+.pasta {
+    background-color: #f4a261;
+}
+
+.pizza {
+    background-color: #2a9d8f;
+}
+
+.burrito {
+    background-color: #e9c46a;
+}
