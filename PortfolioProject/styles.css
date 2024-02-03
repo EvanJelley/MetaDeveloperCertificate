@@ -1,0 +1,123 @@
+/* HEX COLORS */
+/* Aqua: #26877f  Red: #b53434   White: #ede7f1 */
+
+body {
+    font-family: "Optima", "Segoe", "Segoe UI", "Candara", "Calibri", "Arial", "sans-serif";
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+header {
+    display: flex;
+    background-color: #26877f;
+}
+
+header>img {
+    display: block;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 5rem;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    flex: 1;
+    color: #ede7f1;
+    justify-content: center;
+}
+
+nav a {
+    color: #ede7f1;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Post Image Overlay */
+#cactus-img {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overlay-container {
+    position: relative;
+    padding-top: 2%;
+}
+
+.overlay-container img {
+    transition: filter 0.5s ease-in-out;
+    /* Transition effect */
+}
+
+.overlay-container:hover img {
+    filter: blur(3px);
+    /* Apply blur on hover */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    text-shadow: 1px 1px #2d2d2d;
+    color: #ede7f1;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    text-align: left;
+}
+
+.overlay-text h1 {
+    padding: 1%;
+}
+
+
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5rem;
+    padding: 1rem;
+}
