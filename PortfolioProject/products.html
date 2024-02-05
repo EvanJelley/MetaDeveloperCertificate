@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://phoenixdesertnursery.com/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.v="1.2.3",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",t=>{this.persisted=t.persisted}),window.addEventListener("DOMContentLoaded",()=>{this._preconnect3rdParties()}),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}_addUserInteractionListener(t){if(document.hidden){t._triggerListener();return}this.triggerEvents.forEach(e=>window.addEventListener(e,t.userEventHandler,{passive:!0})),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler)}_removeUserInteractionListener(){this.triggerEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!0})),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"onclick","rocket-onclick"),this._pendingClickStarted())}_onTouchMove(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this._pendingClickFinished()}_onTouchEnd(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(t){t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this._pendingClickFinished()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach(t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))})}_waitForPendingClicks(){return new Promise(t=>{this._isClickPending?this._pendingClickFinished=t:t()})}_pendingClickStarted(){this._isClickPending=!0}_pendingClickFinished(){this._isClickPending=!1}_renameDOMAttribute(t,e,r){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(r,event.target.getAttribute(e)),event.target.removeAttribute(e))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(e=>{if(e.hasAttribute("src")){let r=new URL(e.src).origin;r!==location.origin&&t.push({src:r,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this._batchInjectResourceHints(t,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(this),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._waitForPendingClicks().then(()=>{this._replayClicks()}),this._emptyTrash()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _transformScript(t){return new Promise((await this._littleBreath(),navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor)?e=>{let r=document.createElement("script");[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),r.setAttribute(e,t.nodeValue))}),t.text&&(r.text=t.text),r.hasAttribute("src")?(r.addEventListener("load",e),r.addEventListener("error",e)):(r.text=t.text,e());try{t.parentNode.replaceChild(r,t)}catch(i){e()}}:async e=>{function r(){t.setAttribute("data-rocket-status","failed"),e()}try{let i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");t.text,i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",function r(){t.setAttribute("data-rocket-status","executed"),e()}),t.addEventListener("error",r),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}catch(s){r()}})}async _loadScriptsFromList(t){let e=t.shift();return e&&e.isConnected?(await this._transformScript(e),this._loadScriptsFromList(t)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(t,e){var r=document.createDocumentFragment();t.forEach(t=>{let i=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(i){let n=document.createElement("link");n.href=i,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),r.appendChild(n),this.trash.push(n)}}),document.head.appendChild(r)}_delayEventListeners(t){let e={};function r(t,r){!function t(r){!e[r]&&(e[r]={originalFunctions:{add:r.addEventListener,remove:r.removeEventListener},eventsToRewrite:[]},r.addEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.add.apply(r,arguments)},r.removeEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.remove.apply(r,arguments)});function i(t){return e[r].eventsToRewrite.indexOf(t)>=0?"rocket-"+t:t}}(t),e[t].eventsToRewrite.push(r)}function i(t,e){let r=t[e];Object.defineProperty(t,e,{get:()=>r||function(){},set(i){t["rocket"+e]=r=i}})}r(document,"DOMContentLoaded"),r(window,"DOMContentLoaded"),r(window,"load"),r(window,"pageshow"),r(document,"readystatechange"),i(document,"onreadystatechange"),i(window,"onload"),i(window,"onpageshow")}_delayJQueryReady(t){let e;function r(r){if(r&&r.fn&&!t.allJQueries.includes(r)){r.fn.ready=r.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(r):document.addEventListener("rocket-DOMContentLoaded",()=>e.bind(document)(r)),r([])};let i=r.fn.on;r.fn.on=r.fn.init.prototype.on=function(){if(this[0]===window){function t(t){return t.split(" ").map(t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=t(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(e=>{let r=arguments[0][e];delete arguments[0][e],arguments[0][t(e)]=r})}return i.apply(this,arguments),this},t.allJQueries.push(r)}e=r}r(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){r(t)}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this._littleBreath();let t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){let t=new Map;document.write=document.writeln=function(e){let r=document.currentScript;r||console.error("WPRocket unable to document.write this: "+e);let i=document.createRange(),n=r.parentElement,s=t.get(r);void 0===s&&(s=r.nextSibling,t.set(r,s));let a=document.createDocumentFragment();i.setStart(a,0),a.appendChild(i.createContextualFragment(e)),n.insertBefore(a,s)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}_emptyTrash(){this.trash.forEach(t=>t.remove())}static run(){let t=new RocketLazyLoadScripts;t._addUserInteractionListener(t)}}RocketLazyLoadScripts.run();</script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>Phoenix Desert Nursery - Over 3 acres of cacti, succulents and desert plants, based in Phoenix, Arizona</title><link rel="preload" as="style" href="./products_files/css(2)"><link rel="stylesheet" href="./products_files/css(2)" media="all" onload="this.media=&#39;all&#39;"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amita%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" /></noscript>
+
+<!-- The SEO Framework by Sybre Waaijer -->
+<meta name="robots" content="max-snippet:-1,max-image-preview:standard,max-video-preview:-1">
+<meta name="description" content="We are a small family business with over three acres of cacti and succulents, based in Phoenix, Arizona. We offer wholesale and retail.">
+<meta property="og:image" content="https://phoenixdesertnursery.com/wp-content/uploads/2021/01/PXL_20201108_232238729-EFFECTS-1024x768.jpg">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Phoenix Desert Nursery">
+<meta property="og:description" content="We are a small family business with over three acres of cacti and succulents, based in Phoenix, Arizona. We offer wholesale and retail. We offer delivery service up to 20 miles from the nursery within…">
+<meta property="og:url" content="https://phoenixdesertnursery.com/">
+<meta property="og:site_name" content="Phoenix Desert Nursery">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Phoenix Desert Nursery">
+<meta name="twitter:description" content="We are a small family business with over three acres of cacti and succulents, based in Phoenix, Arizona. We offer wholesale and retail. We offer delivery service up to 20 miles from the nursery within…">
+<meta name="twitter:image" content="https://phoenixdesertnursery.com/wp-content/uploads/2021/01/PXL_20201108_232238729-EFFECTS-1024x768.jpg">
+<link rel="canonical" href="https://phoenixdesertnursery.com/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","url":"https://phoenixdesertnursery.com/","name":"Phoenix Desert Nursery","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://phoenixdesertnursery.com/search/{search_term_string}/"},"query-input":"required name=search_term_string"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","url":"https://phoenixdesertnursery.com/","name":"Phoenix Desert Nursery","logo":"https://phoenixdesertnursery.com/wp-content/uploads/2021/01/cactus-5751015_1920.png"}</script>
+<!-- / The SEO Framework by Sybre Waaijer | 12.02ms meta | 34.24ms boot -->
+
+<link rel="dns-prefetch" href="https://stats.wp.com/">
+<link href="https://fonts.gstatic.com/" crossorigin="" rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="Phoenix Desert Nursery » Feed" href="https://phoenixdesertnursery.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Phoenix Desert Nursery » Comments Feed" href="https://phoenixdesertnursery.com/comments/feed/">
+<link rel="stylesheet" id="wc-square-cart-checkout-block-css" href="./products_files/wc-square-cart-checkout-blocks.min.css" media="all">
+<link rel="stylesheet" id="sbi_styles-css" href="./products_files/sbi-styles.min.css" media="all">
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="woocommerce-layout-css" href="./products_files/woocommerce-layout.css" media="all">
+<link rel="stylesheet" id="woocommerce-smallscreen-css" href="./products_files/woocommerce-smallscreen.css" media="only screen and (max-width: 768px)">
+<link rel="stylesheet" id="woocommerce-general-css" href="./products_files/woocommerce.css" media="all">
+<style id="woocommerce-inline-inline-css">
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel="stylesheet" id="hello-elementor-css" href="./products_files/style.min.css" media="all">
+<link rel="stylesheet" id="hello-elementor-theme-style-css" href="./products_files/theme.min.css" media="all">
+<link rel="stylesheet" id="elementor-icons-css" href="./products_files/elementor-icons.min.css" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="./products_files/frontend.min.css" media="all">
+<link rel="stylesheet" id="swiper-css" href="./products_files/swiper.min.css" media="all">
+<link rel="stylesheet" id="elementor-post-7-css" href="./products_files/post-7.css" media="all">
+<link rel="stylesheet" id="elementor-pro-css" href="./products_files/frontend(1).min.css" media="all">
+<link rel="stylesheet" id="uael-frontend-css" href="./products_files/uael-frontend.min.css" media="all">
+<link rel="stylesheet" id="elementor-post-3182-css" href="./products_files/post-3182.css" media="all">
+<link rel="stylesheet" id="elementor-post-1524-css" href="./products_files/post-1524.css" media="all">
+<link rel="stylesheet" id="elementor-post-4431-css" href="./products_files/post-4431.css" media="all">
+<link rel="stylesheet" id="elementor-post-3161-css" href="./products_files/post-3161.css" media="all">
+<link rel="stylesheet" id="ecs-styles-css" href="./products_files/ecs-style.css" media="all">
+<link rel="stylesheet" id="elementor-post-3645-css" href="./products_files/post-3645.css" media="all">
+<style id="rocket-lazyload-inline-css">
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://phoenixdesertnursery.com/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+</style>
+
+<link rel="stylesheet" id="elementor-icons-shared-0-css" href="./products_files/fontawesome.min.css" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-regular-css" href="./products_files/regular.min.css" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-solid-css" href="./products_files/solid.min.css" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-brands-css" href="./products_files/brands.min.css" media="all">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><script id="jquery-core-js" src="./products_files/jquery.min.js" data-rocket-status="executed"></script>
+<script id="jquery-migrate-js" src="./products_files/jquery-migrate.min.js" data-rocket-status="executed"></script>
+<script id="wp-polyfill-inert-js" src="./products_files/wp-polyfill-inert.min.js" data-rocket-status="executed"></script>
+<script id="regenerator-runtime-js" src="./products_files/regenerator-runtime.min.js" data-rocket-status="executed"></script>
+<script id="wp-polyfill-js" src="./products_files/wp-polyfill.min.js" data-rocket-status="executed"></script>
+<script id="wp-hooks-js" src="./products_files/hooks.min.js" data-rocket-status="executed"></script>
+<script src="./products_files/w.js" id="woo-tracks-js"></script>
+<script id="ecs_ajax_load-js-extra">
+var ecs_ajax_params = {"ajaxurl":"https:\/\/phoenixdesertnursery.com\/wp-admin\/admin-ajax.php","posts":"{\"error\":\"\",\"m\":\"\",\"p\":\"3182\",\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"name\":\"\",\"pagename\":\"\",\"page_id\":\"3182\",\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"search_columns\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"update_menu_item_cache\":false,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":10,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}"};
+</script>
+<script id="ecs_ajax_load-js" src="./products_files/ecs_ajax_pagination.js" data-rocket-status="executed"></script>
+<script id="ecs-script-js" src="./products_files/ecs.js" data-rocket-status="executed"></script>
+<link rel="https://api.w.org/" href="https://phoenixdesertnursery.com/wp-json/"><link rel="alternate" type="application/json" href="https://phoenixdesertnursery.com/wp-json/wp/v2/pages/3182"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://phoenixdesertnursery.com/xmlrpc.php?rsd">
+<link rel="alternate" type="application/json+oembed" href="https://phoenixdesertnursery.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fphoenixdesertnursery.com%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://phoenixdesertnursery.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fphoenixdesertnursery.com%2F&amp;format=xml">
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<meta name="generator" content="Elementor 3.19.0; features: e_optimized_assets_loading, additional_custom_breakpoints, block_editor_assets_optimize, e_image_loading_optimization; settings: css_print_method-external, google_font-enabled, font_display-auto">
+<link rel="icon" href="https://phoenixdesertnursery.com/wp-content/uploads/2021/01/cactus-5751015_1920-100x100.webp" sizes="32x32">
+<link rel="icon" href="https://phoenixdesertnursery.com/wp-content/uploads/2021/01/cactus-5751015_1920-300x300.webp" sizes="192x192">
+<link rel="apple-touch-icon" href="https://phoenixdesertnursery.com/wp-content/uploads/2021/01/cactus-5751015_1920-300x300.webp">
+<meta name="msapplication-TileImage" content="https://phoenixdesertnursery.com/wp-content/uploads/2021/01/cactus-5751015_1920-300x300.png">
+		<style id="wp-custom-css">
+			.elementor-column-gap-default>.elementor-row>.elementor-column>.elementor-element-populated {
+	/**
+	 This causes the main shop page to be weirdly padded, so I commented it out! -Mel 
+	 **/
+  /* padding-left: 0px; */
+}
+
+/**f
+ * Single-product page
+ **/
+
+.woocommerce div.product div.images {
+	margin-bottom: 0;
+}
+.woocommerce div.product form.cart .variations td {
+	background-color: transparent;
+}
+
+/* Search popup */
+
+.elementor-search-form--skin-full_screen .elementor-search-form__container {
+		padding-top: 2em;
+    align-items: flex-start;
+
+}
+
+/* Related products */
+.woocommerce ul.products li.product a img {
+	height: 260px;
+	object-fit: cover;
+}
+
+.variations {
+	/*margin-top: 20px;*/
+}
+
+a.button.add_to_cart_button {
+    padding: 0;
+}
+
+.woocommerce div.product form.cart .variations td.label {
+    /*padding: 1em;*/
+}
+
+.woocommerce-info {
+	margin-top: 2em;
+  border-top-color: #517739;
+}
+
+a.reset_variations:hover {
+	color:#5177398c;
+}
+
+.woocommerce-info a:hover {
+  color: #5177398c;
+}
+
+.woocommerce-info::before {
+    color: #517739;
+}
+
+.woocommerce-terms-and-conditions-wrapper a:hover {
+	color: #5177398c;
+}
+
+/* a.button.product_type_variable.add_to_cart_button {
+    border: 2px solid #517739;
+} */
+
+.woocommerce #content input.button.alt:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce-page #content input.button.alt:hover, .woocommerce-page #respond input#submit.alt:hover, .woocommerce-page a.button.alt:hover, .woocommerce-page button.button.alt:hover, .woocommerce-page input.button.alt:hover {
+/* 
+background:#517739 !important;
+
+background-color:#517739 !important;
+
+color:white !important;
+
+text-shadow: transparent !important;
+
+box-shadow: none;
+
+border-color:#517739 !important;
+ */
+}
+
+.woocommerce #content input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce-page #content input.button:hover, .woocommerce-page #respond input#submit:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button:hover {
+
+/* background:#517739 !important;
+
+background-color:#517739 !important;
+
+color:white !important;
+
+text-shadow: transparent !important;
+
+box-shadow: none;
+
+border-color:#517739 !important; */
+
+}
+
+.woocommerce #content input.button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-page #content input.button, .woocommerce-page #respond input#submit, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button {
+
+background: #ffffff !important;
+
+color:#517739 !important;
+
+text-shadow: transparent !important;
+
+border-color:#517739 !important;
+
+}
+
+.woocommerce #content input.button.alt:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce-page #content input.button.alt:hover, .woocommerce-page #respond input#submit.alt:hover, .woocommerce-page a.button.alt:hover, .woocommerce-page button.button.alt:hover, .woocommerce-page input.button.alt:hover {
+
+background: #517739 !important;
+
+box-shadow: none;
+
+text-shadow: transparent !important;
+
+color:white !important;
+
+border-color:#517739 !important;
+	
+}
+
+button#place_order {
+    border: solid 1px #517739;
+}
+
+/* shop view */
+
+.woocommerce ul.products li.product a img {
+    border-radius: 8px;
+}
+
+.woocommerce ul.products li.product a img {
+    height: 200px;
+}
+
+/* cart */
+
+tr.woocommerce-shipping-totals.shipping {
+    display: none;
+}
+
+
+.shop_table_responsive tr.woocommerce-shipping-totals.shipping {
+    display: none;
+}
+
+/* Gift Card */
+
+.postid-3675 .woocommerce-breadcrumb {
+	display: none;
+}
+
+.postid-3675 .product_meta {
+	display: none;
+}
+
+.postid-3675 .elementor-widget-woocommerce-product-images {
+	display:none
+}
+
+.postid-3675 .product-header {
+	display: none;
+}
+
+.postid-3675 .field-info-row {
+	display: none;
+}		</style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><style type="text/css">undefined</style></head>
+<body class="home page-template-default page page-id-3182 wp-custom-logo theme-hello-elementor woocommerce-js elementor-default elementor-kit-7 elementor-page elementor-page-3182 e--ua-blink e--ua-chrome e--ua-mac e--ua-webkit" data-elementor-device-mode="desktop">
+
+
+<a class="skip-link screen-reader-text" href="https://phoenixdesertnursery.com/#content">Skip to content</a>
+
+		<div data-elementor-type="header" data-elementor-id="1524" class="elementor elementor-1524 elementor-location-header" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-541da27 elementor-section-height-min-height elementor-section-content-middle elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="541da27" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-wide">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-77f0c8c" data-id="77f0c8c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a1a7c09 elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="a1a7c09" data-element_type="widget" data-widget_type="theme-site-logo.default">
+				<div class="elementor-widget-container">
+									<a href="https://phoenixdesertnursery.com/">
+			<img fetchpriority="high" width="400" height="288" src="./products_files/cropped-official_web_logo.webp" class="attachment-full size-full wp-image-2343 entered lazyloaded" alt="" data-lazy-srcset="https://phoenixdesertnursery.com/wp-content/uploads/2021/06/cropped-official_web_logo.webp 400w,https://phoenixdesertnursery.com/wp-content/uploads/2021/06/cropped-official_web_logo-300x216.webp 300w" data-lazy-sizes="(max-width: 400px) 100vw, 400px" data-lazy-src="https://phoenixdesertnursery.com/wp-content/uploads/2021/06/cropped-official_web_logo.webp" data-ll-status="loaded" sizes="(max-width: 400px) 100vw, 400px" srcset="https://phoenixdesertnursery.com/wp-content/uploads/2021/06/cropped-official_web_logo.webp 400w,https://phoenixdesertnursery.com/wp-content/uploads/2021/06/cropped-official_web_logo-300x216.webp 300w"><noscript><img fetchpriority="high" width="400" height="288" src="https://phoenixdesertnursery.com/wp-content/uploads/2021/06/cropped-official_web_logo.webp" class="attachment-full size-full wp-image-2343" alt="" srcset="https://phoenixdesertnursery.com/wp-content/uploads/2021/06/cropped-official_web_logo.webp 400w,https://phoenixdesertnursery.com/wp-content/uploads/2021/06/cropped-official_web_logo-300x216.webp 300w" sizes="(max-width: 400px) 100vw, 400px" /></noscript>				</a>
+									</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-ab1d2fc elementor-hidden-mobile" data-id="ab1d2fc" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-0ff3b98 elementor-hidden-mobile" data-id="0ff3b98" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b5cfd55 elementor-search-form--skin-classic elementor-search-form--button-type-icon elementor-search-form--icon-search elementor-widget elementor-widget-search-form" data-id="b5cfd55" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;classic&quot;}" data-widget_type="search-form.default">
+				<div class="elementor-widget-container">
+					<search role="search">
+			<form class="elementor-search-form" action="https://phoenixdesertnursery.com/" method="get">
+												<div class="elementor-search-form__container">
+					<label class="elementor-screen-only" for="elementor-search-form-b5cfd55">Search</label>
+
+					
+					<input id="elementor-search-form-b5cfd55" placeholder="Search..." class="elementor-search-form__input" type="search" name="s" value="">
+					
+											<button class="elementor-search-form__submit" type="submit" aria-label="Search">
+															<i aria-hidden="true" class="fas fa-search"></i>								<span class="elementor-screen-only">Search</span>
+													</button>
+					
+									</div>
+			</form>
+		</search>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-dd9983e elementor-section-height-min-height elementor-section-content-middle elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="dd9983e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-wide">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6106a77" data-id="6106a77" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9b88064 elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="9b88064" data-element_type="widget" data-widget_type="theme-site-logo.default">
+				<div class="elementor-widget-container">
+									<a href="https://phoenixdesertnursery.com/">
+			<img fetchpriority="high" width="400" height="288" src="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%20400%20288&#39;%3E%3C/svg%3E" class="attachment-full size-full wp-image-2343" alt="" data-lazy-srcset="https://phoenixdesertnursery.com/wp-content/uploads/2021/06/cropped-official_web_logo.webp 400w,https://phoenixdesertnursery.com/wp-content/uploads/2021/06/cropped-official_web_logo-300x216.webp 300w" data-lazy-sizes="(max-width: 400px) 100vw, 400px" data-lazy-src="https://phoenixdesertnursery.com/wp-content/uploads/2021/06/cropped-official_web_logo.webp"><noscript><img fetchpriority="high" width="400" height="288" src="https://phoenixdesertnursery.com/wp-content/uploads/2021/06/cropped-official_web_logo.webp" class="attachment-full size-full wp-image-2343" alt="" srcset="https://phoenixdesertnursery.com/wp-content/uploads/2021/06/cropped-official_web_logo.webp 400w,https://phoenixdesertnursery.com/wp-content/uploads/2021/06/cropped-official_web_logo-300x216.webp 300w" sizes="(max-width: 400px) 100vw, 400px" /></noscript>				</a>
+									</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-16aac9b" data-id="16aac9b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4e7a10f toggle-icon--cart-solid elementor-widget-tablet__width-auto elementor-menu-cart--items-indicator-bubble elementor-menu-cart--cart-type-side-cart elementor-menu-cart--show-remove-button-yes elementor-widget elementor-widget-woocommerce-menu-cart" data-id="4e7a10f" data-element_type="widget" data-settings="{&quot;cart_type&quot;:&quot;side-cart&quot;,&quot;open_cart&quot;:&quot;click&quot;,&quot;automatically_open_cart&quot;:&quot;no&quot;}" data-widget_type="woocommerce-menu-cart.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-menu-cart__wrapper">
+							<div class="elementor-menu-cart__toggle_wrapper">
+					<div class="elementor-menu-cart__container elementor-lightbox" aria-hidden="true">
+						<div class="elementor-menu-cart__main" aria-hidden="true">
+									<div class="elementor-menu-cart__close-button">
+					</div>
+									<div class="widget_shopping_cart_content">	<div class="woocommerce-mini-cart__empty-message">No products in the cart.</div>
+</div>
+						</div>
+					</div>
+											<div class="elementor-menu-cart__toggle elementor-button-wrapper">
+			<a id="elementor-menu-cart__toggle_button" href="https://phoenixdesertnursery.com/#" class="elementor-menu-cart__toggle_button elementor-button elementor-size-sm" aria-expanded="false">
+				<span class="elementor-button-text"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>0.00</bdi></span></span>
+				<span class="elementor-button-icon">
+					<span class="elementor-button-icon-qty" data-counter="0">0</span>
+					<i class="eicon-cart-solid"></i>					<span class="elementor-screen-only">Cart</span>
+				</span>
+			</a>
+		</div>
+		
+		
+						</div>
+					</div> <!-- close elementor-menu-cart__wrapper -->
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-8d83795 elementor-search-form--skin-full_screen elementor-widget-tablet__width-auto elementor-widget-mobile__width-auto elementor-hidden-mobile elementor-widget elementor-widget-search-form" data-id="8d83795" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;full_screen&quot;}" data-widget_type="search-form.default">
+				<div class="elementor-widget-container">
+					<search role="search">
+			<form class="elementor-search-form" action="https://phoenixdesertnursery.com/" method="get">
+												<div class="elementor-search-form__toggle" tabindex="0" role="button">
+					<i aria-hidden="true" class="fas fa-search"></i>					<span class="elementor-screen-only">Search</span>
+				</div>
+								<div class="elementor-search-form__container">
+					<label class="elementor-screen-only" for="elementor-search-form-8d83795">Search</label>
+
+					
+					<input id="elementor-search-form-8d83795" placeholder="Search..." class="elementor-search-form__input" type="search" name="s" value="">
+					
+					
+										<div class="dialog-lightbox-close-button dialog-close-button" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-close"></i>						<span class="elementor-screen-only">Close this search box.</span>
+					</div>
+									</div>
+			</form>
+		</search>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-afd06d0 elementor-widget-tablet__width-auto elementor-widget-mobile__width-auto elementor-view-default elementor-widget elementor-widget-icon" data-id="afd06d0" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<a class="elementor-icon" href="https://phoenixdesertnursery.com/#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjMxNjEiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D">
+			<i aria-hidden="true" class="fas fa-bars"></i>			</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-65fb4b2 elementor-hidden-desktop elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="65fb4b2" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-wide">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4f6b74b" data-id="4f6b74b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-be390b9 elementor-search-form--skin-classic elementor-search-form--button-type-icon elementor-search-form--icon-search elementor-widget elementor-widget-search-form" data-id="be390b9" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;classic&quot;}" data-widget_type="search-form.default">
+				<div class="elementor-widget-container">
+					<search role="search">
+			<form class="elementor-search-form" action="https://phoenixdesertnursery.com/" method="get">
+												<div class="elementor-search-form__container">
+					<label class="elementor-screen-only" for="elementor-search-form-be390b9">Search</label>
+
+					
+					<input id="elementor-search-form-be390b9" placeholder="Search..." class="elementor-search-form__input" type="search" name="s" value="">
+					
+											<button class="elementor-search-form__submit" type="submit" aria-label="Search">
+															<i aria-hidden="true" class="fas fa-search"></i>								<span class="elementor-screen-only">Search</span>
+													</button>
+					
+									</div>
+			</form>
+		</search>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-11a5a23 elementor-hidden-mobile elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="11a5a23" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-798192c" data-id="798192c" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6595300" data-id="6595300" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e6e1f06 elementor-nav-menu__align-center elementor-nav-menu--dropdown-mobile elementor-nav-menu--stretch elementor-nav-menu__text-align-center elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="e6e1f06" data-element_type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
+				<ul id="menu-1-e6e1f06" class="elementor-nav-menu" data-smartmenus-id="1707160310414705"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-3182 current_page_item menu-item-3448"><a href="https://phoenixdesertnursery.com/" aria-current="page" class="elementor-item elementor-item-active">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-977"><a href="https://phoenixdesertnursery.com/nursery/" class="elementor-item">Shop</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-141"><a href="https://phoenixdesertnursery.com/contact-page/" class="elementor-item">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2541"><a href="https://phoenixdesertnursery.com/cart/" class="elementor-item">Cart</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2849"><a href="https://phoenixdesertnursery.com/plant-care/" class="elementor-item">Cactus Care</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3679"><a href="https://phoenixdesertnursery.com/gift-certificates/" class="elementor-item">Gift Certificates</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false" style="">
+			<i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close eicon-close"></i>			<span class="elementor-screen-only">Menu</span>
+		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true" style="width: 1440px; left: 0px; top: 44px; --menu-height: 0;">
+				<ul id="menu-2-e6e1f06" class="elementor-nav-menu" data-smartmenus-id="17071603104151394"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-3182 current_page_item menu-item-3448"><a href="https://phoenixdesertnursery.com/" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-977"><a href="https://phoenixdesertnursery.com/nursery/" class="elementor-item" tabindex="-1">Shop</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-141"><a href="https://phoenixdesertnursery.com/contact-page/" class="elementor-item" tabindex="-1">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2541"><a href="https://phoenixdesertnursery.com/cart/" class="elementor-item" tabindex="-1">Cart</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2849"><a href="https://phoenixdesertnursery.com/plant-care/" class="elementor-item" tabindex="-1">Cactus Care</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3679"><a href="https://phoenixdesertnursery.com/gift-certificates/" class="elementor-item" tabindex="-1">Gift Certificates</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-57d2e71" data-id="57d2e71" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1f67113 toggle-icon--cart-medium elementor-menu-cart--items-indicator-bubble elementor-menu-cart--show-subtotal-yes elementor-menu-cart--cart-type-side-cart elementor-menu-cart--show-remove-button-yes elementor-widget elementor-widget-woocommerce-menu-cart" data-id="1f67113" data-element_type="widget" data-settings="{&quot;cart_type&quot;:&quot;side-cart&quot;,&quot;open_cart&quot;:&quot;click&quot;,&quot;automatically_open_cart&quot;:&quot;no&quot;}" data-widget_type="woocommerce-menu-cart.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-menu-cart__wrapper">
+							<div class="elementor-menu-cart__toggle_wrapper">
+					<div class="elementor-menu-cart__container elementor-lightbox" aria-hidden="true">
+						<div class="elementor-menu-cart__main" aria-hidden="true">
+									<div class="elementor-menu-cart__close-button">
+					</div>
+									<div class="widget_shopping_cart_content">	<div class="woocommerce-mini-cart__empty-message">No products in the cart.</div>
+</div>
+						</div>
+					</div>
+											<div class="elementor-menu-cart__toggle elementor-button-wrapper">
+			<a id="elementor-menu-cart__toggle_button" href="https://phoenixdesertnursery.com/#" class="elementor-menu-cart__toggle_button elementor-button elementor-size-sm" aria-expanded="false">
+				<span class="elementor-button-text"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>0.00</bdi></span></span>
+				<span class="elementor-button-icon">
+					<span class="elementor-button-icon-qty" data-counter="0">0</span>
+					<i class="eicon-cart-medium"></i>					<span class="elementor-screen-only">Cart</span>
+				</span>
+			</a>
+		</div>
+		
+		
+						</div>
+					</div> <!-- close elementor-menu-cart__wrapper -->
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		
+<main id="content" class="site-main post-3182 page type-page status-publish hentry">
+
+	
+	<div class="page-content">
+				<div data-elementor-type="wp-page" data-elementor-id="3182" class="elementor elementor-3182" data-elementor-post-type="page">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-ce5a522 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ce5a522" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-wider">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1976eb0" data-id="1976eb0" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-8b4e17e elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-image" data-id="8b4e17e" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="800" height="600" src="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%20800%20600&#39;%3E%3C/svg%3E" class="attachment-large size-large wp-image-643" alt="" data-lazy-srcset="https://phoenixdesertnursery.com/wp-content/uploads/2021/01/PXL_20201108_232238729-EFFECTS-1024x768.webp 1024w,https://phoenixdesertnursery.com/wp-content/uploads/2021/01/PXL_20201108_232238729-EFFECTS-600x450.webp 600w,https://phoenixdesertnursery.com/wp-content/uploads/2021/01/PXL_20201108_232238729-EFFECTS-300x225.webp 300w,https://phoenixdesertnursery.com/wp-content/uploads/2021/01/PXL_20201108_232238729-EFFECTS-768x576.webp 768w,https://phoenixdesertnursery.com/wp-content/uploads/2021/01/PXL_20201108_232238729-EFFECTS.webp 1475w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://phoenixdesertnursery.com/wp-content/uploads/2021/01/PXL_20201108_232238729-EFFECTS-1024x768.webp"><noscript><img decoding="async" width="800" height="600" src="https://phoenixdesertnursery.com/wp-content/uploads/2021/01/PXL_20201108_232238729-EFFECTS-1024x768.webp" class="attachment-large size-large wp-image-643" alt="" srcset="https://phoenixdesertnursery.com/wp-content/uploads/2021/01/PXL_20201108_232238729-EFFECTS-1024x768.webp 1024w,https://phoenixdesertnursery.com/wp-content/uploads/2021/01/PXL_20201108_232238729-EFFECTS-600x450.webp 600w,https://phoenixdesertnursery.com/wp-content/uploads/2021/01/PXL_20201108_232238729-EFFECTS-300x225.webp 300w,https://phoenixdesertnursery.com/wp-content/uploads/2021/01/PXL_20201108_232238729-EFFECTS-768x576.webp 768w,https://phoenixdesertnursery.com/wp-content/uploads/2021/01/PXL_20201108_232238729-EFFECTS.webp 1475w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-37fe205 elementor-widget elementor-widget-heading" data-id="37fe205" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Phoenix Desert Nursery</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-06573ed elementor-widget elementor-widget-text-editor" data-id="06573ed" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<h4><a href="https://www.google.com/maps/place/Phoenix+Desert+Nursery/@33.392339,-112.005556,10z/data=!4m13!1m7!3m6!1s0x872b0f9f5423d58b:0x39577e69acb3e190!2s3525+E+Southern+Ave,+Phoenix,+AZ+85040!3b1!8m2!3d33.3923386!4d-112.0055565!3m4!1s0x872b0f9f55ee9877:0x8eb7bc0cbbe70910!8m2!3d33.3922008!4d-112.0053219?hl=en-US"><strong>3525 E Southern Ave, </strong><strong>Phoenix, AZ 85040</strong></a></h4>						</div>
+				</div>
+				<div class="elementor-element elementor-element-b208a86 elementor-widget elementor-widget-heading" data-id="b208a86" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Hours:</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-e729513 elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="e729513" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="far fa-clock"></i>						</span>
+										<span class="elementor-icon-list-text">Monday - Saturday: 7:30 AM - 2:30 PM</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="far fa-clock"></i>						</span>
+										<span class="elementor-icon-list-text"> Sunday 9:30 AM - 1 PM</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-db9e0f2 elementor-widget elementor-widget-text-editor" data-id="db9e0f2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>We are a small family business with over three acres of cacti and succulents, based in Phoenix, Arizona. We offer wholesale and retail. We offer delivery service up to 20 miles from the nursery within the Phoenix metropolitan area (fees apply). Pickup is free of charge.&nbsp;</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-2c69de2 elementor-widget elementor-widget-heading" data-id="2c69de2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Order plants for pickup or delivery within the Phoenix Area:</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-73e318a elementor-align-left elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="73e318a" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://phoenixdesertnursery.com/nursery/">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Browse Local Catalog</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-70f2830 elementor-widget elementor-widget-text-editor" data-id="70f2830" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<h4 class="elementor-heading-title elementor-size-default elementor-inline-editing pen" contenteditable="true" data-elementor-setting-key="title" data-pen-placeholder="Type Here...">Not in Phoenix? No problem! <a href="https://phoenixdesertseeds.com/">Click here</a> for our <b>mail-order </b>catalog. We’re happy to ship our quality plants and seeds anywhere within the USA.</h4>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-0a88da0" data-id="0a88da0" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated e-swiper-container">
+						<div class="elementor-element elementor-element-d23a048 elementor-hidden-phone elementor-skin-carousel elementor-pagination-type-bullets elementor-pagination-position-outside elementor-widget elementor-widget-media-carousel e-widget-swiper" data-id="d23a048" data-element_type="widget" data-settings="{&quot;speed&quot;:&quot;900&quot;,&quot;autoplay_speed&quot;:&quot;9000&quot;,&quot;effect&quot;:&quot;fade&quot;,&quot;skin&quot;:&quot;carousel&quot;,&quot;pagination&quot;:&quot;bullets&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]}}" data-widget_type="media-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-swiper">
+			<div class="elementor-main-swiper swiper-container swiper-container-fade swiper-container-initialized swiper-container-horizontal" style="cursor: grab;">
+				<div class="swiper-wrapper" style="transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="6" style="width: 536px; transition-duration: 0ms; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+									<div data-bg="https://phoenixdesertnursery.com/wp-content/uploads/2021/02/UpClose1-2.jpg" class="elementor-carousel-image rocket-lazyload entered lazyloaded" role="img" aria-label="UpClose1" style="background-image: url(&quot;https://phoenixdesertnursery.com/wp-content/uploads/2021/02/UpClose1-2.jpg&quot;);" data-ll-status="loaded">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 536px; transition-duration: 0ms; opacity: 1; transform: translate3d(-536px, 0px, 0px);">
+									<div data-bg="https://phoenixdesertnursery.com/wp-content/uploads/2021/01/PXL_20201108_232238729-EFFECTS.jpg" class="elementor-carousel-image rocket-lazyload entered lazyloaded" role="img" aria-label="PXL_20201108_232238729-EFFECTS" style="background-image: url(&quot;https://phoenixdesertnursery.com/wp-content/uploads/2021/01/PXL_20201108_232238729-EFFECTS.jpg&quot;);" data-ll-status="loaded">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 536px; transition-duration: 0ms; opacity: 0; transform: translate3d(-1072px, 0px, 0px);">
+									<div data-bg="https://phoenixdesertnursery.com/wp-content/uploads/2021/02/UpClose4-2.jpg" class="elementor-carousel-image rocket-lazyload entered lazyloaded" role="img" aria-label="UpClose4" style="background-image: url(&quot;https://phoenixdesertnursery.com/wp-content/uploads/2021/02/UpClose4-2.jpg&quot;);" data-ll-status="loaded">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide" data-swiper-slide-index="2" style="width: 536px; transition-duration: 0ms; opacity: 0; transform: translate3d(-1608px, 0px, 0px);">
+									<div data-bg="https://phoenixdesertnursery.com/wp-content/uploads/2021/02/NurseryView2-scaled.jpg" class="elementor-carousel-image rocket-lazyload entered lazyloaded" role="img" aria-label="NurseryView2" style="background-image: url(&quot;https://phoenixdesertnursery.com/wp-content/uploads/2021/02/NurseryView2-scaled.jpg&quot;);" data-ll-status="loaded">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide" data-swiper-slide-index="3" style="width: 536px; transition-duration: 0ms; opacity: 0; transform: translate3d(-2144px, 0px, 0px);">
+									<div data-bg="https://phoenixdesertnursery.com/wp-content/uploads/2021/02/Sunset-scaled.jpg" class="elementor-carousel-image rocket-lazyload entered lazyloaded" role="img" aria-label="Sunset" style="background-image: url(&quot;https://phoenixdesertnursery.com/wp-content/uploads/2021/02/Sunset-scaled.jpg&quot;);" data-ll-status="loaded">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide" data-swiper-slide-index="4" style="width: 536px; transition-duration: 0ms; opacity: 0; transform: translate3d(-2680px, 0px, 0px);">
+									<div data-bg="https://phoenixdesertnursery.com/wp-content/uploads/2021/02/NurseryView4-2.jpg" class="elementor-carousel-image rocket-lazyload entered lazyloaded" role="img" aria-label="NurseryView4" style="background-image: url(&quot;https://phoenixdesertnursery.com/wp-content/uploads/2021/02/NurseryView4-2.jpg&quot;);" data-ll-status="loaded">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide" data-swiper-slide-index="5" style="width: 536px; transition-duration: 0ms; opacity: 0; transform: translate3d(-3216px, 0px, 0px);">
+									<div data-bg="https://phoenixdesertnursery.com/wp-content/uploads/2021/02/NurseryView5-scaled.jpg" class="elementor-carousel-image rocket-lazyload entered lazyloaded" role="img" aria-label="NurseryView5" style="background-image: url(&quot;https://phoenixdesertnursery.com/wp-content/uploads/2021/02/NurseryView5-scaled.jpg&quot;);" data-ll-status="loaded">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="6" style="width: 536px; transition-duration: 0ms; opacity: 0; transform: translate3d(-3752px, 0px, 0px);">
+									<div data-bg="https://phoenixdesertnursery.com/wp-content/uploads/2021/02/UpClose1-2.jpg" class="elementor-carousel-image rocket-lazyload entered lazyloaded" role="img" aria-label="UpClose1" style="background-image: url(&quot;https://phoenixdesertnursery.com/wp-content/uploads/2021/02/UpClose1-2.jpg&quot;);" data-ll-status="loaded">
+
+			
+					</div>
+								</div>
+									<div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 536px; transition-duration: 0ms; opacity: 0; transform: translate3d(-4288px, 0px, 0px);">
+									<div data-bg="https://phoenixdesertnursery.com/wp-content/uploads/2021/01/PXL_20201108_232238729-EFFECTS.jpg" class="elementor-carousel-image rocket-lazyload entered lazyloaded" role="img" aria-label="PXL_20201108_232238729-EFFECTS" style="background-image: url(&quot;https://phoenixdesertnursery.com/wp-content/uploads/2021/01/PXL_20201108_232238729-EFFECTS.jpg&quot;);" data-ll-status="loaded">
+
+			
+					</div>
+								</div></div>
+															<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7"></span></div>
+																	<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4803505 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4803505" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-wide">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-21c9405" data-id="21c9405" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-dc1f8e2 elementor-widget elementor-widget-google_maps" data-id="dc1f8e2" data-element_type="widget" data-widget_type="google_maps.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-custom-embed">
+			<iframe loading="lazy" src="./products_files/maps.html" title="3525 E. Southern Ave. Phoenix, Az, 85040" aria-label="3525 E. Southern Ave. Phoenix, Az, 85040" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://maps.google.com/maps?q=3525%20E.%20Southern%20Ave.%20Phoenix%2C%20Az%2C%2085040&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" data-ll-status="loaded" class="entered exited lazyloaded"></iframe><noscript><iframe loading="lazy"
+					src="https://maps.google.com/maps?q=3525%20E.%20Southern%20Ave.%20Phoenix%2C%20Az%2C%2085040&#038;t=m&#038;z=10&#038;output=embed&#038;iwloc=near"
+					title="3525 E. Southern Ave. Phoenix, Az, 85040"
+					aria-label="3525 E. Southern Ave. Phoenix, Az, 85040"
+			></iframe></noscript>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a192036" data-id="a192036" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2c131f8 elementor-widget elementor-widget-text-editor" data-id="2c131f8" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><strong>Family owned nursery in Phoenix, Arizona</strong>. Established in 1979. Over 3 acres of cacti, succulents and desert plants. The plants that we grow and sell are varieties that thrive in the high heat, low water conditions of Phoenix and surrounding areas. Our goal is to provide the best possible selection of cactus and succulents for the desert landscape.</p>						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-54fba91 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="54fba91" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-wide">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-d9fcc0f" data-id="d9fcc0f" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-a005304" data-id="a005304" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-297d29d elementor-widget elementor-widget-heading" data-id="297d29d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Tag us on Instagram </h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-0411e62 elementor-widget elementor-widget-shortcode" data-id="0411e62" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode">
+<div id="sb_instagram" class="sbi sbi_mob_col_1 sbi_tab_col_2 sbi_col_4 sbi_width_resp sbi_medium" style="padding-bottom: 10px;width: 100%;" data-feedid="*1" data-res="auto" data-cols="4" data-colsmobile="1" data-colstablet="2" data-num="12" data-nummobile="" data-shortcode-atts="{}" data-postid="3182" data-locatornonce="b1c02432b2" data-sbi-flags="favorLocal" data-sbi-index="1">
+	
+    <div id="sbi_images" style="padding: 5px;">
+		<div class="sbi_item sbi_type_image" id="sbi_17942464652755468" data-date="1703443409">
+    <div class="sbi_photo_wrap">
+        <a class="sbi_photo sbi_imgLiquid_bgSize sbi_imgLiquid_ready" href="https://www.instagram.com/p/C1Pwsn1vxpR/" target="_blank" rel="noopener nofollow" data-full-res="https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/412671663_333258189541101_3274174778258904273_nfull.jpg" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/412671663_333258189541101_3274174778258904273_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=0frZOfoqxWkAX9X0jLW&amp;_nc_oc=AQlUa51qgLgy6t_NVMrDSrxgSVGlm7OP4uKhjIMxKGymkgpHYekB8inmAx2k8RW1NXI&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfA1dTmsFQYCMAwUNyjSoUeAvtud24aESeGQ7zzax3Lmjw&amp;oe=65C54259&quot;,&quot;150&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/412671663_333258189541101_3274174778258904273_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=0frZOfoqxWkAX9X0jLW&amp;_nc_oc=AQlUa51qgLgy6t_NVMrDSrxgSVGlm7OP4uKhjIMxKGymkgpHYekB8inmAx2k8RW1NXI&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfA1dTmsFQYCMAwUNyjSoUeAvtud24aESeGQ7zzax3Lmjw&amp;oe=65C54259&quot;,&quot;320&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/412671663_333258189541101_3274174778258904273_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=0frZOfoqxWkAX9X0jLW&amp;_nc_oc=AQlUa51qgLgy6t_NVMrDSrxgSVGlm7OP4uKhjIMxKGymkgpHYekB8inmAx2k8RW1NXI&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfA1dTmsFQYCMAwUNyjSoUeAvtud24aESeGQ7zzax3Lmjw&amp;oe=65C54259&quot;,&quot;640&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/412671663_333258189541101_3274174778258904273_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=0frZOfoqxWkAX9X0jLW&amp;_nc_oc=AQlUa51qgLgy6t_NVMrDSrxgSVGlm7OP4uKhjIMxKGymkgpHYekB8inmAx2k8RW1NXI&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfA1dTmsFQYCMAwUNyjSoUeAvtud24aESeGQ7zzax3Lmjw&amp;oe=65C54259&quot;}" style="height: 175.094px; background-image: url(&quot;https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/412671663_333258189541101_3274174778258904273_nlow.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+            <span class="sbi-screenreader">Wishing everyone a prickle-free holiday season. Ma</span>
+            	                    <img width="1000" height="560" decoding="async" src="./products_files/412671663_333258189541101_3274174778258904273_nlow.jpg" alt="Wishing everyone a prickle-free holiday season. May your days be as sharp as a cactus and as bright as a desert sunrise! 🌞🌵🎊" data-lazy-src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" style="display: none;"><noscript><img width="1000" height="560" decoding="async" src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" alt="Wishing everyone a prickle-free holiday season. May your days be as sharp as a cactus and as bright as a desert sunrise! 🌞🌵🎊"></noscript>
+        </a>
+    </div>
+</div><div class="sbi_item sbi_type_image" id="sbi_17922554576789896" data-date="1696026331">
+    <div class="sbi_photo_wrap">
+        <a class="sbi_photo sbi_imgLiquid_bgSize sbi_imgLiquid_ready" href="https://www.instagram.com/p/CxytvjIPaUn/" target="_blank" rel="noopener nofollow" data-full-res="https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/385689911_854696642869823_8498660614655153491_nfull.jpg" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/385689911_854696642869823_8498660614655153491_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=172fd_D-fNIAX_UkbqI&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfDZQJTNTDIyPvXrpKVUNkPKyktz8SQNZeudEAU6CX7yEQ&amp;oe=65C4D627&quot;,&quot;150&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/385689911_854696642869823_8498660614655153491_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=172fd_D-fNIAX_UkbqI&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfDZQJTNTDIyPvXrpKVUNkPKyktz8SQNZeudEAU6CX7yEQ&amp;oe=65C4D627&quot;,&quot;320&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/385689911_854696642869823_8498660614655153491_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=172fd_D-fNIAX_UkbqI&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfDZQJTNTDIyPvXrpKVUNkPKyktz8SQNZeudEAU6CX7yEQ&amp;oe=65C4D627&quot;,&quot;640&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/385689911_854696642869823_8498660614655153491_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=172fd_D-fNIAX_UkbqI&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfDZQJTNTDIyPvXrpKVUNkPKyktz8SQNZeudEAU6CX7yEQ&amp;oe=65C4D627&quot;}" style="height: 175.094px; background-image: url(&quot;https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/385689911_854696642869823_8498660614655153491_nlow.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+            <span class="sbi-screenreader"></span>
+            	                    <img width="1000" height="560" decoding="async" src="./products_files/385689911_854696642869823_8498660614655153491_nlow.jpg" alt="Lophocereus schottii early morning flowers. 😍 🌸
+
+#lophocereusschottii #cactus #cactusflowersblooming #cactusflower #cactusofinstagram #desertflowersinbloom" data-lazy-src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" style="display: none;"><noscript><img width="1000" height="560" decoding="async" src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" alt="Lophocereus schottii early morning flowers. 😍 🌸
+
+#lophocereusschottii #cactus #cactusflowersblooming #cactusflower #cactusofinstagram #desertflowersinbloom"></noscript>
+        </a>
+    </div>
+</div><div class="sbi_item sbi_type_video" id="sbi_17980729781283772" data-date="1695159782">
+    <div class="sbi_photo_wrap">
+        <a class="sbi_photo sbi_imgLiquid_bgSize sbi_imgLiquid_ready" href="https://www.instagram.com/reel/CxY4O4Lvhyy/" target="_blank" rel="noopener nofollow" data-full-res="https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/379707818_320745147112723_5761921435275264724_nfull.jpg" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.36329-15\/379707818_320745147112723_5761921435275264724_n.jpg?_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=SIEeRDu_7mUAX85qBut&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfDTsJpczlN-5i3fXTI0URo5KKaNjpy-U3z4B0OFHbKLWg&amp;oe=65C568B9&quot;,&quot;150&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.36329-15\/379707818_320745147112723_5761921435275264724_n.jpg?_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=SIEeRDu_7mUAX85qBut&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfDTsJpczlN-5i3fXTI0URo5KKaNjpy-U3z4B0OFHbKLWg&amp;oe=65C568B9&quot;,&quot;320&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.36329-15\/379707818_320745147112723_5761921435275264724_n.jpg?_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=SIEeRDu_7mUAX85qBut&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfDTsJpczlN-5i3fXTI0URo5KKaNjpy-U3z4B0OFHbKLWg&amp;oe=65C568B9&quot;,&quot;640&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.36329-15\/379707818_320745147112723_5761921435275264724_n.jpg?_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=SIEeRDu_7mUAX85qBut&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfDTsJpczlN-5i3fXTI0URo5KKaNjpy-U3z4B0OFHbKLWg&amp;oe=65C568B9&quot;}" style="height: 175.094px; background-image: url(&quot;https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/379707818_320745147112723_5761921435275264724_nlow.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+            <span class="sbi-screenreader">Over 3 acres of cacti and succulents, based in Pho</span>
+            	        <svg style="color: rgba(255,255,255,1)" class="svg-inline--fa fa-play fa-w-14 sbi_playbtn" aria-label="Play" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="play" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg>            <img width="1000" height="560" decoding="async" src="./products_files/379707818_320745147112723_5761921435275264724_nlow.jpg" alt="Over 3 acres of cacti and succulents, based in Phoenix, Arizona. Wholesale + Retail. If you&#39;re in the area, come check us out! Hours: Monday - Saturday: 7:30 AM - 2:30 PM. Sunday 9:30 AM - 1 PM. Or check us out online at: phoenixdesertseeds.com" data-lazy-src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" style="display: none;"><noscript><img width="1000" height="560" decoding="async" src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" alt="Over 3 acres of cacti and succulents, based in Phoenix, Arizona. Wholesale + Retail. If you&#039;re in the area, come check us out! Hours: Monday - Saturday: 7:30 AM - 2:30 PM. Sunday 9:30 AM - 1 PM. Or check us out online at: phoenixdesertseeds.com"></noscript>
+        </a>
+    </div>
+</div><div class="sbi_item sbi_type_image" id="sbi_18026760064545548" data-date="1692494132">
+    <div class="sbi_photo_wrap">
+        <a class="sbi_photo sbi_imgLiquid_bgSize sbi_imgLiquid_ready" href="https://www.instagram.com/p/CwJcm4ExVwi/" target="_blank" rel="noopener nofollow" data-full-res="https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/368689717_4350156635210025_936339318615285144_nfull.jpg" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/368689717_4350156635210025_936339318615285144_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=HgePSuuxoNcAX-28V9I&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfBBoIaswm-edQliTKpiUld0jxYzIYst1azVCOcc1RkPqg&amp;oe=65C67DEE&quot;,&quot;150&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/368689717_4350156635210025_936339318615285144_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=HgePSuuxoNcAX-28V9I&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfBBoIaswm-edQliTKpiUld0jxYzIYst1azVCOcc1RkPqg&amp;oe=65C67DEE&quot;,&quot;320&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/368689717_4350156635210025_936339318615285144_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=HgePSuuxoNcAX-28V9I&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfBBoIaswm-edQliTKpiUld0jxYzIYst1azVCOcc1RkPqg&amp;oe=65C67DEE&quot;,&quot;640&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/368689717_4350156635210025_936339318615285144_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=HgePSuuxoNcAX-28V9I&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfBBoIaswm-edQliTKpiUld0jxYzIYst1azVCOcc1RkPqg&amp;oe=65C67DEE&quot;}" style="height: 175.094px; background-image: url(&quot;https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/368689717_4350156635210025_936339318615285144_nlow.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+            <span class="sbi-screenreader">The rare Echinocactus horizonthalonius var. moelle</span>
+            	                    <img width="1000" height="560" decoding="async" src="./products_files/368689717_4350156635210025_936339318615285144_nlow.jpg" alt="The rare Echinocactus horizonthalonius var. moelleri in bloom 🌸😍
+
+Find this beauty among others on our eBay store and get it before it&#39;s gone!! https://bit.ly/3OE667H
+
+#cactusflowers
+#cactusflowers🌵🌸
+#cactiflowersofinstagram
+#globularcactus
+#cactusforsale 
+#rarecactus 
+#raresucculents 
+#rareplants 
+#rarecactusclub 
+#echinocactus 
+#echinocactushorizonthalonius" data-lazy-src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" style="display: none;"><noscript><img width="1000" height="560" decoding="async" src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" alt="The rare Echinocactus horizonthalonius var. moelleri in bloom 🌸😍
+
+Find this beauty among others on our eBay store and get it before it&#039;s gone!! https://bit.ly/3OE667H
+
+#cactusflowers
+#cactusflowers🌵🌸
+#cactiflowersofinstagram
+#globularcactus
+#cactusforsale 
+#rarecactus 
+#raresucculents 
+#rareplants 
+#rarecactusclub 
+#echinocactus 
+#echinocactushorizonthalonius"></noscript>
+        </a>
+    </div>
+</div><div class="sbi_item sbi_type_video" id="sbi_18013493404709276" data-date="1689636547">
+    <div class="sbi_photo_wrap">
+        <a class="sbi_photo sbi_imgLiquid_bgSize sbi_imgLiquid_ready" href="https://www.instagram.com/tv/Cu0SAC5uMMX/" target="_blank" rel="noopener nofollow" data-full-res="https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/361692552_812360720506664_6872438178169862277_nfull.jpg" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.36329-15\/361692552_812360720506664_6872438178169862277_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=IpKk9r8ivNoAX9_3X0i&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfAKLpal2nKOoQIglqlb3j_oWQlE_wVG6qRlzzbnXCxReg&amp;oe=65C656E6&quot;,&quot;150&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.36329-15\/361692552_812360720506664_6872438178169862277_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=IpKk9r8ivNoAX9_3X0i&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfAKLpal2nKOoQIglqlb3j_oWQlE_wVG6qRlzzbnXCxReg&amp;oe=65C656E6&quot;,&quot;320&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.36329-15\/361692552_812360720506664_6872438178169862277_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=IpKk9r8ivNoAX9_3X0i&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfAKLpal2nKOoQIglqlb3j_oWQlE_wVG6qRlzzbnXCxReg&amp;oe=65C656E6&quot;,&quot;640&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.36329-15\/361692552_812360720506664_6872438178169862277_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=IpKk9r8ivNoAX9_3X0i&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfAKLpal2nKOoQIglqlb3j_oWQlE_wVG6qRlzzbnXCxReg&amp;oe=65C656E6&quot;}" style="height: 175.094px; background-image: url(&quot;https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/361692552_812360720506664_6872438178169862277_nlow.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+            <span class="sbi-screenreader">Beautiful Ferocactus stainessii v. pilosus! See on</span>
+            	        <svg style="color: rgba(255,255,255,1)" class="svg-inline--fa fa-play fa-w-14 sbi_playbtn" aria-label="Play" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="play" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg>            <img width="1000" height="560" decoding="async" src="./products_files/361692552_812360720506664_6872438178169862277_nlow.jpg" alt="Beautiful Ferocactus stainessii v. pilosus! See on our eBay store: bit.ly/43jKX7V" data-lazy-src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" style="display: none;"><noscript><img width="1000" height="560" decoding="async" src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" alt="Beautiful Ferocactus stainessii v. pilosus! See on our eBay store: bit.ly/43jKX7V"></noscript>
+        </a>
+    </div>
+</div><div class="sbi_item sbi_type_video" id="sbi_17978165159172791" data-date="1689036884">
+    <div class="sbi_photo_wrap">
+        <a class="sbi_photo sbi_imgLiquid_bgSize sbi_imgLiquid_ready" href="https://www.instagram.com/reel/CuiaYumptXD/" target="_blank" rel="noopener nofollow" data-full-res="https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/358775504_1500157063855939_987520886670046611_nfull.jpg" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.36329-15\/358775504_1500157063855939_987520886670046611_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=aM-Y5YV6-sAAX9NeRrv&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfBjOcWUtJNMJ_l7UXQhGvJUkd0uaqEVk13afNvTHuqqFQ&amp;oe=65C632D7&quot;,&quot;150&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.36329-15\/358775504_1500157063855939_987520886670046611_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=aM-Y5YV6-sAAX9NeRrv&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfBjOcWUtJNMJ_l7UXQhGvJUkd0uaqEVk13afNvTHuqqFQ&amp;oe=65C632D7&quot;,&quot;320&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.36329-15\/358775504_1500157063855939_987520886670046611_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=aM-Y5YV6-sAAX9NeRrv&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfBjOcWUtJNMJ_l7UXQhGvJUkd0uaqEVk13afNvTHuqqFQ&amp;oe=65C632D7&quot;,&quot;640&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.36329-15\/358775504_1500157063855939_987520886670046611_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=aM-Y5YV6-sAAX9NeRrv&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfBjOcWUtJNMJ_l7UXQhGvJUkd0uaqEVk13afNvTHuqqFQ&amp;oe=65C632D7&quot;}" style="height: 175.094px; background-image: url(&quot;https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/358775504_1500157063855939_987520886670046611_nlow.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+            <span class="sbi-screenreader">https://bit.ly/43jKX7V</span>
+            	        <svg style="color: rgba(255,255,255,1)" class="svg-inline--fa fa-play fa-w-14 sbi_playbtn" aria-label="Play" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="play" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg>            <img width="1000" height="560" decoding="async" src="./products_files/358775504_1500157063855939_987520886670046611_nlow.jpg" alt="https://bit.ly/43jKX7V" data-lazy-src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" style="display: none;"><noscript><img width="1000" height="560" decoding="async" src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" alt="https://bit.ly/43jKX7V"></noscript>
+        </a>
+    </div>
+</div><div class="sbi_item sbi_type_image" id="sbi_17964799874356835" data-date="1688507939">
+    <div class="sbi_photo_wrap">
+        <a class="sbi_photo sbi_imgLiquid_bgSize sbi_imgLiquid_ready" href="https://www.instagram.com/p/CuSpjDhyoZk/" target="_blank" rel="noopener nofollow" data-full-res="https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/357787038_940910110344421_1364333876407941041_nfull.jpg" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/357787038_940910110344421_1364333876407941041_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=9SAAeDaw06QAX_funLT&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfALGq7OlXCeQ3ZS4sgL5yr4uxumQMvBLT5aTBG9gPdaBA&amp;oe=65C6AC9D&quot;,&quot;150&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/357787038_940910110344421_1364333876407941041_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=9SAAeDaw06QAX_funLT&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfALGq7OlXCeQ3ZS4sgL5yr4uxumQMvBLT5aTBG9gPdaBA&amp;oe=65C6AC9D&quot;,&quot;320&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/357787038_940910110344421_1364333876407941041_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=9SAAeDaw06QAX_funLT&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfALGq7OlXCeQ3ZS4sgL5yr4uxumQMvBLT5aTBG9gPdaBA&amp;oe=65C6AC9D&quot;,&quot;640&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/357787038_940910110344421_1364333876407941041_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=9SAAeDaw06QAX_funLT&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfALGq7OlXCeQ3ZS4sgL5yr4uxumQMvBLT5aTBG9gPdaBA&amp;oe=65C6AC9D&quot;}" style="height: 175.094px; background-image: url(&quot;https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/357787038_940910110344421_1364333876407941041_nlow.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+            <span class="sbi-screenreader">Don't miss this golden opportunity and get it now </span>
+            	                    <img width="1000" height="560" decoding="async" src="./products_files/357787038_940910110344421_1364333876407941041_nlow.jpg" alt="Don&#39;t miss this golden opportunity and get it now before it&#39;s gone! Just one is available right now on our eBay store!
+https://bit.ly/43jSiog
+
+#mammillaria
+#mammillariaflowers
+#mammillariaforsale
+#mammillarialover
+#mammillariarhodantha
+#mammillarias
+#mammillariaarizona
+#mammillariaoftheday
+#mammillariaofinstagram
+#mammillariasofinstagram
+#cutecactus
+#mammillariasofinstagram
+#goldencactus
+#goldencacti
+#cactusflowers
+#cactusflowers🌵🌸
+#cactiflowersofinstagram
+#globularcactus
+#yellowcactus
+#cactusforsale" data-lazy-src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" style="display: none;"><noscript><img width="1000" height="560" decoding="async" src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" alt="Don&#039;t miss this golden opportunity and get it now before it&#039;s gone! Just one is available right now on our eBay store!
+https://bit.ly/43jSiog
+
+#mammillaria
+#mammillariaflowers
+#mammillariaforsale
+#mammillarialover
+#mammillariarhodantha
+#mammillarias
+#mammillariaarizona
+#mammillariaoftheday
+#mammillariaofinstagram
+#mammillariasofinstagram
+#cutecactus
+#mammillariasofinstagram
+#goldencactus
+#goldencacti
+#cactusflowers
+#cactusflowers🌵🌸
+#cactiflowersofinstagram
+#globularcactus
+#yellowcactus
+#cactusforsale"></noscript>
+        </a>
+    </div>
+</div><div class="sbi_item sbi_type_image" id="sbi_18014978440632500" data-date="1688250888">
+    <div class="sbi_photo_wrap">
+        <a class="sbi_photo sbi_imgLiquid_bgSize sbi_imgLiquid_ready" href="https://www.instagram.com/p/CuK_QwWvBJR/" target="_blank" rel="noopener nofollow" data-full-res="https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/357318102_797879091798102_7640387669006049237_nfull.jpg" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/357318102_797879091798102_7640387669006049237_n.jpg?_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=buzAvrE1RwEAX-PheyP&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfBQhP21u_2h_mpjG6bKW9rXrs6Ed9Gyq337AXmg66FN5A&amp;oe=65C55485&quot;,&quot;150&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/357318102_797879091798102_7640387669006049237_n.jpg?_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=buzAvrE1RwEAX-PheyP&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfBQhP21u_2h_mpjG6bKW9rXrs6Ed9Gyq337AXmg66FN5A&amp;oe=65C55485&quot;,&quot;320&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/357318102_797879091798102_7640387669006049237_n.jpg?_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=buzAvrE1RwEAX-PheyP&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfBQhP21u_2h_mpjG6bKW9rXrs6Ed9Gyq337AXmg66FN5A&amp;oe=65C55485&quot;,&quot;640&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/357318102_797879091798102_7640387669006049237_n.jpg?_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=buzAvrE1RwEAX-PheyP&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfBQhP21u_2h_mpjG6bKW9rXrs6Ed9Gyq337AXmg66FN5A&amp;oe=65C55485&quot;}" style="height: 175.094px; background-image: url(&quot;https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/357318102_797879091798102_7640387669006049237_nlow.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+            <span class="sbi-screenreader">6-8 feet tall Ocotillos only $55 ea at the nursery</span>
+            	                    <img width="1000" height="560" decoding="async" src="./products_files/357318102_797879091798102_7640387669006049237_nlow.jpg" alt="6-8 feet tall Ocotillos only $55 ea at the nursery! Come check ‘em out!" data-lazy-src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" style="display: none;"><noscript><img width="1000" height="560" decoding="async" src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" alt="6-8 feet tall Ocotillos only $55 ea at the nursery! Come check ‘em out!"></noscript>
+        </a>
+    </div>
+</div><div class="sbi_item sbi_type_image" id="sbi_18013293475669825" data-date="1688080831">
+    <div class="sbi_photo_wrap">
+        <a class="sbi_photo sbi_imgLiquid_bgSize sbi_imgLiquid_ready" href="https://www.instagram.com/p/CuF650vvIvh/" target="_blank" rel="noopener nofollow" data-full-res="https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/356940251_1704178566684932_1732111479071303235_nfull.jpg" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/356940251_1704178566684932_1732111479071303235_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=OmVzz3QqedIAX_60Y3Q&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfB22H_sU3lyy61qf-YAJQayzVu5C4CsYhR_Uk9TVeyKTA&amp;oe=65C61F2C&quot;,&quot;150&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/356940251_1704178566684932_1732111479071303235_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=OmVzz3QqedIAX_60Y3Q&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfB22H_sU3lyy61qf-YAJQayzVu5C4CsYhR_Uk9TVeyKTA&amp;oe=65C61F2C&quot;,&quot;320&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/356940251_1704178566684932_1732111479071303235_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=OmVzz3QqedIAX_60Y3Q&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfB22H_sU3lyy61qf-YAJQayzVu5C4CsYhR_Uk9TVeyKTA&amp;oe=65C61F2C&quot;,&quot;640&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/356940251_1704178566684932_1732111479071303235_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=OmVzz3QqedIAX_60Y3Q&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfB22H_sU3lyy61qf-YAJQayzVu5C4CsYhR_Uk9TVeyKTA&amp;oe=65C61F2C&quot;}" style="height: 175.094px; background-image: url(&quot;https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/356940251_1704178566684932_1732111479071303235_nlow.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+            <span class="sbi-screenreader">Look what just landed in our eBay store!
+Ships wit</span>
+            	                    <img width="1000" height="560" decoding="async" src="./products_files/356940251_1704178566684932_1732111479071303235_nlow.jpg" alt="Look what just landed in our eBay store!
+Ships within the USA.
+https://ebay.to/3pvZ5x9" data-lazy-src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" style="display: none;"><noscript><img width="1000" height="560" decoding="async" src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" alt="Look what just landed in our eBay store!
+Ships within the USA.
+https://ebay.to/3pvZ5x9"></noscript>
+        </a>
+    </div>
+</div><div class="sbi_item sbi_type_image" id="sbi_17967479963426871" data-date="1685213899">
+    <div class="sbi_photo_wrap">
+        <a class="sbi_photo sbi_imgLiquid_bgSize sbi_imgLiquid_ready" href="https://www.instagram.com/p/CsweqkYBeVc/" target="_blank" rel="noopener nofollow" data-full-res="https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/350109687_640599391252775_2666041439434922032_nfull.jpg" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t39.30808-6\/350109687_640599391252775_2666041439434922032_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=8zQHg-mo9uoAX_yVDFw&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfCVXbQOP3eDfzjXwyqhu9neb1B09iA76MR7RitekNiV6w&amp;oe=65C5515A&quot;,&quot;150&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t39.30808-6\/350109687_640599391252775_2666041439434922032_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=8zQHg-mo9uoAX_yVDFw&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfCVXbQOP3eDfzjXwyqhu9neb1B09iA76MR7RitekNiV6w&amp;oe=65C5515A&quot;,&quot;320&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t39.30808-6\/350109687_640599391252775_2666041439434922032_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=8zQHg-mo9uoAX_yVDFw&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfCVXbQOP3eDfzjXwyqhu9neb1B09iA76MR7RitekNiV6w&amp;oe=65C5515A&quot;,&quot;640&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t39.30808-6\/350109687_640599391252775_2666041439434922032_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=8zQHg-mo9uoAX_yVDFw&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfCVXbQOP3eDfzjXwyqhu9neb1B09iA76MR7RitekNiV6w&amp;oe=65C5515A&quot;}" style="height: 175.094px; background-image: url(&quot;https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/350109687_640599391252775_2666041439434922032_nlow.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+            <span class="sbi-screenreader">we are officially extending our hours.
+Monday-Tues</span>
+            	                    <img width="1000" height="560" decoding="async" src="./products_files/350109687_640599391252775_2666041439434922032_nlow.jpg" alt="we are officially extending our hours.
+Monday-Tuesday: 7:30am-2:30pm
+Wednesday-Saturday: 7:30am-5:30pm" data-lazy-src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" style="display: none;"><noscript><img width="1000" height="560" decoding="async" src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" alt="we are officially extending our hours.
+Monday-Tuesday: 7:30am-2:30pm
+Wednesday-Saturday: 7:30am-5:30pm"></noscript>
+        </a>
+    </div>
+</div><div class="sbi_item sbi_type_image" id="sbi_18217935559237068" data-date="1685041310">
+    <div class="sbi_photo_wrap">
+        <a class="sbi_photo sbi_imgLiquid_bgSize sbi_imgLiquid_ready" href="https://www.instagram.com/p/CsrVepOvMVC/" target="_blank" rel="noopener nofollow" data-full-res="https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/349244146_178491448190586_4145718314521271488_nfull.jpg" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/349244146_178491448190586_4145718314521271488_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=iIHiiTPqVtUAX_byfwe&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfBT8WRk-_lfAdi305mOkVHZsCXSDIyuRDt_kUUSwY4xhg&amp;oe=65C5014C&quot;,&quot;150&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/349244146_178491448190586_4145718314521271488_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=iIHiiTPqVtUAX_byfwe&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfBT8WRk-_lfAdi305mOkVHZsCXSDIyuRDt_kUUSwY4xhg&amp;oe=65C5014C&quot;,&quot;320&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/349244146_178491448190586_4145718314521271488_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=iIHiiTPqVtUAX_byfwe&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfBT8WRk-_lfAdi305mOkVHZsCXSDIyuRDt_kUUSwY4xhg&amp;oe=65C5014C&quot;,&quot;640&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/349244146_178491448190586_4145718314521271488_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=iIHiiTPqVtUAX_byfwe&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfBT8WRk-_lfAdi305mOkVHZsCXSDIyuRDt_kUUSwY4xhg&amp;oe=65C5014C&quot;}" style="height: 175.094px; background-image: url(&quot;https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/349244146_178491448190586_4145718314521271488_nlow.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+            <span class="sbi-screenreader">Happy to introduce a new Arizona native plant into</span>
+            	                    <img width="1000" height="560" decoding="async" src="./products_files/349244146_178491448190586_4145718314521271488_nlow.jpg" alt="Happy to introduce a new Arizona native plant into our regular selection. We now offer the often requested Arizona rainbow cactus 🌈 in 4” pots" data-lazy-src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" style="display: none;"><noscript><img width="1000" height="560" decoding="async" src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" alt="Happy to introduce a new Arizona native plant into our regular selection. We now offer the often requested Arizona rainbow cactus 🌈 in 4” pots"></noscript>
+        </a>
+    </div>
+</div><div class="sbi_item sbi_type_image" id="sbi_17975086241123088" data-date="1685040464">
+    <div class="sbi_photo_wrap">
+        <a class="sbi_photo sbi_imgLiquid_bgSize sbi_imgLiquid_ready" href="https://www.instagram.com/p/CsrT3U_veZ9/" target="_blank" rel="noopener nofollow" data-full-res="https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/348714425_925321675197076_4153350290876154495_nfull.jpg" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/348714425_925321675197076_4153350290876154495_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=U7fHb6v7100AX94GJ6n&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfAf3wPbq97d_HttvNLDN0NOmezWUhE5-eyNpA8OEWD0GQ&amp;oe=65C4F2DA&quot;,&quot;150&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/348714425_925321675197076_4153350290876154495_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=U7fHb6v7100AX94GJ6n&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfAf3wPbq97d_HttvNLDN0NOmezWUhE5-eyNpA8OEWD0GQ&amp;oe=65C4F2DA&quot;,&quot;320&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/348714425_925321675197076_4153350290876154495_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=U7fHb6v7100AX94GJ6n&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfAf3wPbq97d_HttvNLDN0NOmezWUhE5-eyNpA8OEWD0GQ&amp;oe=65C4F2DA&quot;,&quot;640&quot;:&quot;https:\/\/scontent-iad3-1.cdninstagram.com\/v\/t51.29350-15\/348714425_925321675197076_4153350290876154495_n.jpg?_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=18de74&amp;_nc_ohc=U7fHb6v7100AX94GJ6n&amp;_nc_ht=scontent-iad3-1.cdninstagram.com&amp;edm=AM6HXa8EAAAA&amp;oh=00_AfAf3wPbq97d_HttvNLDN0NOmezWUhE5-eyNpA8OEWD0GQ&amp;oe=65C4F2DA&quot;}" style="height: 175.094px; background-image: url(&quot;https://phoenixdesertnursery.com/wp-content/uploads/sb-instagram-feed-images/348714425_925321675197076_4153350290876154495_nlow.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; opacity: 1;">
+            <span class="sbi-screenreader">We finally have a steady supply of healthy Mexican</span>
+            	                    <img width="1000" height="560" decoding="async" src="./products_files/348714425_925321675197076_4153350290876154495_nlow.jpg" alt="We finally have a steady supply of healthy Mexican fence posts. Come in and start building a cactus fence today." data-lazy-src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" style="display: none;"><noscript><img width="1000" height="560" decoding="async" src="https://phoenixdesertnursery.com/wp-content/plugins/instagram-feed/img/placeholder.png" alt="We finally have a steady supply of healthy Mexican fence posts. Come in and start building a cactus fence today."></noscript>
+        </a>
+    </div>
+</div>    </div>
+
+	<div id="sbi_load">
+
+			<a class="sbi_load_btn" href="javascript:void(0);" style="background: rgb(81,119,57);color: rgb(255,255,255);">
+			<span class="sbi_btn_text">Load More...</span>
+			<span class="sbi_loader sbi_hidden" style="background-color: rgb(255, 255, 255);" aria-hidden="true"></span>
+		</a>
+	
+			<span class="sbi_follow_btn sbi_custom">
+        <a href="https://www.instagram.com/phoenixdesertnursery/" style="background: rgb(81,119,57);color: rgb(255,255,255);" target="_blank" rel="nofollow noopener">
+            <svg class="svg-inline--fa fa-instagram fa-w-14" aria-hidden="true" data-fa-processed="" aria-label="Instagram" data-prefix="fab" data-icon="instagram" role="img" viewBox="0 0 448 512">
+	                <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+	            </svg>            <span>Follow on Instagram</span>
+        </a>
+    </span>
+	
+</div>
+
+	    
+	</div>
+
+</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-5cd37b1" data-id="5cd37b1" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				</div>
+				<div class="post-tags">
+					</div>
+			</div>
+
+	
+</main>
+
+			<div data-elementor-type="footer" data-elementor-id="4431" class="elementor elementor-4431 elementor-location-footer" data-elementor-post-type="elementor_library">
+					<footer class="elementor-section elementor-top-section elementor-element elementor-element-3926a85d elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3926a85d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-wide">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7daea43c" data-id="7daea43c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-508f22b4 elementor-mobile-align-left elementor-tablet-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="508f22b4" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="tel:%20602-574-1926">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-phone-alt"></i>						</span>
+										<span class="elementor-icon-list-text">602-574-1926</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://g.page/the-phoenix-desert-nursery?share">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-map-marker-alt"></i>						</span>
+										<span class="elementor-icon-list-text">3525 E. Southern Ave. Phoenix, AZ 85040</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://g.page/the-phoenix-desert-nursery?share">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-clock"></i>						</span>
+										<span class="elementor-icon-list-text">Hours:  Monday - Saturday: 7:30 AM - 2:30 PM | Sunday: 9:30am - 1pm</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-77c6df1b" data-id="77c6df1b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1317cbdc elementor-align-right elementor-icon-list--layout-inline elementor-mobile-align-left elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="1317cbdc" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items elementor-inline-items">
+							<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="https://www.facebook.com/PhoenixDesertNursery" target="_blank">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fab fa-facebook-f"></i>						</span>
+										<span class="elementor-icon-list-text"></span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="https://www.instagram.com/phoenixdesertnursery/" target="_blank">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fab fa-instagram"></i>						</span>
+										<span class="elementor-icon-list-text"></span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-606db97 elementor-align-right elementor-icon-list--layout-inline elementor-mobile-align-left elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="606db97" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items elementor-inline-items">
+							<li class="elementor-icon-list-item elementor-inline-item">
+										<span class="elementor-icon-list-text">© 2023 Phoenix Desert Nursery</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</footer>
+				</div>
+		
+<!-- Instagram Feed JS -->
+<script type="text/javascript" src="data:text/javascript;base64,CnZhciBzYmlhamF4dXJsID0gImh0dHBzOi8vcGhvZW5peGRlc2VydG51cnNlcnkuY29tL3dwLWFkbWluL2FkbWluLWFqYXgucGhwIjsK" data-rocket-status="executed">
+var sbiajaxurl = "https://phoenixdesertnursery.com/wp-admin/admin-ajax.php";
+</script>
+		
+			<script type="text/javascript" src="data:text/javascript;base64,CgkJKGZ1bmN0aW9uICgpIHsKCQkJdmFyIGMgPSBkb2N1bWVudC5ib2R5LmNsYXNzTmFtZTsKCQkJYyA9IGMucmVwbGFjZSgvd29vY29tbWVyY2Utbm8tanMvLCAnd29vY29tbWVyY2UtanMnKTsKCQkJZG9jdW1lbnQuYm9keS5jbGFzc05hbWUgPSBjOwoJCX0pKCk7Cgk=" data-rocket-status="executed">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link rel="stylesheet" id="e-animations-css" href="./products_files/animations.min.css" media="all">
+<script id="dynamic-conditions-js" src="./products_files/dynamic-conditions-public.js" data-rocket-status="executed"></script>
+<script id="alg-wc-pop-frontend-js-extra">
+var alg_wc_pop_data_object = {"force_decimals":"","force_decimal_width":"2"};
+</script>
+<script id="alg-wc-pop-frontend-js" src="./products_files/alg-wc-pop-frontend.js" data-rocket-status="executed"></script>
+<script id="jquery-blockui-js" src="./products_files/jquery.blockUI.min.js" data-rocket-status="executed"></script>
+<script id="wc-add-to-cart-js-extra">
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/phoenixdesertnursery.com\/cart\/","is_cart":"","cart_redirect_after_add":"yes"};
+</script>
+<script id="wc-add-to-cart-js" src="./products_files/add-to-cart.min.js" data-rocket-status="executed"></script>
+<script id="js-cookie-js" src="./products_files/js.cookie.min.js" data-rocket-status="executed"></script>
+<script id="woocommerce-js-extra">
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+</script>
+<script id="woocommerce-js" src="./products_files/woocommerce.min.js" data-rocket-status="executed"></script>
+<script id="rocket-browser-checker-js-after" src="data:text/javascript;base64,CiJ1c2Ugc3RyaWN0Ijt2YXIgX2NyZWF0ZUNsYXNzPWZ1bmN0aW9uKCl7ZnVuY3Rpb24gZGVmaW5lUHJvcGVydGllcyh0YXJnZXQscHJvcHMpe2Zvcih2YXIgaT0wO2k8cHJvcHMubGVuZ3RoO2krKyl7dmFyIGRlc2NyaXB0b3I9cHJvcHNbaV07ZGVzY3JpcHRvci5lbnVtZXJhYmxlPWRlc2NyaXB0b3IuZW51bWVyYWJsZXx8ITEsZGVzY3JpcHRvci5jb25maWd1cmFibGU9ITAsInZhbHVlImluIGRlc2NyaXB0b3ImJihkZXNjcmlwdG9yLndyaXRhYmxlPSEwKSxPYmplY3QuZGVmaW5lUHJvcGVydHkodGFyZ2V0LGRlc2NyaXB0b3Iua2V5LGRlc2NyaXB0b3IpfX1yZXR1cm4gZnVuY3Rpb24oQ29uc3RydWN0b3IscHJvdG9Qcm9wcyxzdGF0aWNQcm9wcyl7cmV0dXJuIHByb3RvUHJvcHMmJmRlZmluZVByb3BlcnRpZXMoQ29uc3RydWN0b3IucHJvdG90eXBlLHByb3RvUHJvcHMpLHN0YXRpY1Byb3BzJiZkZWZpbmVQcm9wZXJ0aWVzKENvbnN0cnVjdG9yLHN0YXRpY1Byb3BzKSxDb25zdHJ1Y3Rvcn19KCk7ZnVuY3Rpb24gX2NsYXNzQ2FsbENoZWNrKGluc3RhbmNlLENvbnN0cnVjdG9yKXtpZighKGluc3RhbmNlIGluc3RhbmNlb2YgQ29uc3RydWN0b3IpKXRocm93IG5ldyBUeXBlRXJyb3IoIkNhbm5vdCBjYWxsIGEgY2xhc3MgYXMgYSBmdW5jdGlvbiIpfXZhciBSb2NrZXRCcm93c2VyQ29tcGF0aWJpbGl0eUNoZWNrZXI9ZnVuY3Rpb24oKXtmdW5jdGlvbiBSb2NrZXRCcm93c2VyQ29tcGF0aWJpbGl0eUNoZWNrZXIob3B0aW9ucyl7X2NsYXNzQ2FsbENoZWNrKHRoaXMsUm9ja2V0QnJvd3NlckNvbXBhdGliaWxpdHlDaGVja2VyKSx0aGlzLnBhc3NpdmVTdXBwb3J0ZWQ9ITEsdGhpcy5fY2hlY2tQYXNzaXZlT3B0aW9uKHRoaXMpLHRoaXMub3B0aW9ucz0hIXRoaXMucGFzc2l2ZVN1cHBvcnRlZCYmb3B0aW9uc31yZXR1cm4gX2NyZWF0ZUNsYXNzKFJvY2tldEJyb3dzZXJDb21wYXRpYmlsaXR5Q2hlY2tlcixbe2tleToiX2NoZWNrUGFzc2l2ZU9wdGlvbiIsdmFsdWU6ZnVuY3Rpb24oc2VsZil7dHJ5e3ZhciBvcHRpb25zPXtnZXQgcGFzc2l2ZSgpe3JldHVybiEoc2VsZi5wYXNzaXZlU3VwcG9ydGVkPSEwKX19O3dpbmRvdy5hZGRFdmVudExpc3RlbmVyKCJ0ZXN0IixudWxsLG9wdGlvbnMpLHdpbmRvdy5yZW1vdmVFdmVudExpc3RlbmVyKCJ0ZXN0IixudWxsLG9wdGlvbnMpfWNhdGNoKGVycil7c2VsZi5wYXNzaXZlU3VwcG9ydGVkPSExfX19LHtrZXk6ImluaXRSZXF1ZXN0SWRsZUNhbGxiYWNrIix2YWx1ZTpmdW5jdGlvbigpeyExIGluIHdpbmRvdyYmKHdpbmRvdy5yZXF1ZXN0SWRsZUNhbGxiYWNrPWZ1bmN0aW9uKGNiKXt2YXIgc3RhcnQ9RGF0ZS5ub3coKTtyZXR1cm4gc2V0VGltZW91dChmdW5jdGlvbigpe2NiKHtkaWRUaW1lb3V0OiExLHRpbWVSZW1haW5pbmc6ZnVuY3Rpb24oKXtyZXR1cm4gTWF0aC5tYXgoMCw1MC0oRGF0ZS5ub3coKS1zdGFydCkpfX0pfSwxKX0pLCExIGluIHdpbmRvdyYmKHdpbmRvdy5jYW5jZWxJZGxlQ2FsbGJhY2s9ZnVuY3Rpb24oaWQpe3JldHVybiBjbGVhclRpbWVvdXQoaWQpfSl9fSx7a2V5OiJpc0RhdGFTYXZlck1vZGVPbiIsdmFsdWU6ZnVuY3Rpb24oKXtyZXR1cm4iY29ubmVjdGlvbiJpbiBuYXZpZ2F0b3ImJiEwPT09bmF2aWdhdG9yLmNvbm5lY3Rpb24uc2F2ZURhdGF9fSx7a2V5OiJzdXBwb3J0c0xpbmtQcmVmZXRjaCIsdmFsdWU6ZnVuY3Rpb24oKXt2YXIgZWxlbT1kb2N1bWVudC5jcmVhdGVFbGVtZW50KCJsaW5rIik7cmV0dXJuIGVsZW0ucmVsTGlzdCYmZWxlbS5yZWxMaXN0LnN1cHBvcnRzJiZlbGVtLnJlbExpc3Quc3VwcG9ydHMoInByZWZldGNoIikmJndpbmRvdy5JbnRlcnNlY3Rpb25PYnNlcnZlciYmImlzSW50ZXJzZWN0aW5nImluIEludGVyc2VjdGlvbk9ic2VydmVyRW50cnkucHJvdG90eXBlfX0se2tleToiaXNTbG93Q29ubmVjdGlvbiIsdmFsdWU6ZnVuY3Rpb24oKXtyZXR1cm4iY29ubmVjdGlvbiJpbiBuYXZpZ2F0b3ImJiJlZmZlY3RpdmVUeXBlImluIG5hdmlnYXRvci5jb25uZWN0aW9uJiYoIjJnIj09PW5hdmlnYXRvci5jb25uZWN0aW9uLmVmZmVjdGl2ZVR5cGV8fCJzbG93LTJnIj09PW5hdmlnYXRvci5jb25uZWN0aW9uLmVmZmVjdGl2ZVR5cGUpfX1dKSxSb2NrZXRCcm93c2VyQ29tcGF0aWJpbGl0eUNoZWNrZXJ9KCk7Cg==" data-rocket-status="executed">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/checkout\/??(.*)|\/cart\/?|\/my-account\/??(.*)|\/wc-api\/v(.*)|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/phoenixdesertnursery.com","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+<script id="rocket-preload-links-js-after" src="data:text/javascript;base64,CihmdW5jdGlvbigpIHsKInVzZSBzdHJpY3QiO3ZhciByPSJmdW5jdGlvbiI9PXR5cGVvZiBTeW1ib2wmJiJzeW1ib2wiPT10eXBlb2YgU3ltYm9sLml0ZXJhdG9yP2Z1bmN0aW9uKGUpe3JldHVybiB0eXBlb2YgZX06ZnVuY3Rpb24oZSl7cmV0dXJuIGUmJiJmdW5jdGlvbiI9PXR5cGVvZiBTeW1ib2wmJmUuY29uc3RydWN0b3I9PT1TeW1ib2wmJmUhPT1TeW1ib2wucHJvdG90eXBlPyJzeW1ib2wiOnR5cGVvZiBlfSxlPWZ1bmN0aW9uKCl7ZnVuY3Rpb24gaShlLHQpe2Zvcih2YXIgbj0wO248dC5sZW5ndGg7bisrKXt2YXIgaT10W25dO2kuZW51bWVyYWJsZT1pLmVudW1lcmFibGV8fCExLGkuY29uZmlndXJhYmxlPSEwLCJ2YWx1ZSJpbiBpJiYoaS53cml0YWJsZT0hMCksT2JqZWN0LmRlZmluZVByb3BlcnR5KGUsaS5rZXksaSl9fXJldHVybiBmdW5jdGlvbihlLHQsbil7cmV0dXJuIHQmJmkoZS5wcm90b3R5cGUsdCksbiYmaShlLG4pLGV9fSgpO2Z1bmN0aW9uIGkoZSx0KXtpZighKGUgaW5zdGFuY2VvZiB0KSl0aHJvdyBuZXcgVHlwZUVycm9yKCJDYW5ub3QgY2FsbCBhIGNsYXNzIGFzIGEgZnVuY3Rpb24iKX12YXIgdD1mdW5jdGlvbigpe2Z1bmN0aW9uIG4oZSx0KXtpKHRoaXMsbiksdGhpcy5icm93c2VyPWUsdGhpcy5jb25maWc9dCx0aGlzLm9wdGlvbnM9dGhpcy5icm93c2VyLm9wdGlvbnMsdGhpcy5wcmVmZXRjaGVkPW5ldyBTZXQsdGhpcy5ldmVudFRpbWU9bnVsbCx0aGlzLnRocmVzaG9sZD0xMTExLHRoaXMubnVtT25Ib3Zlcj0wfXJldHVybiBlKG4sW3trZXk6ImluaXQiLHZhbHVlOmZ1bmN0aW9uKCl7IXRoaXMuYnJvd3Nlci5zdXBwb3J0c0xpbmtQcmVmZXRjaCgpfHx0aGlzLmJyb3dzZXIuaXNEYXRhU2F2ZXJNb2RlT24oKXx8dGhpcy5icm93c2VyLmlzU2xvd0Nvbm5lY3Rpb24oKXx8KHRoaXMucmVnZXg9e2V4Y2x1ZGVVcmlzOlJlZ0V4cCh0aGlzLmNvbmZpZy5leGNsdWRlVXJpcywiaSIpLGltYWdlczpSZWdFeHAoIi4oIit0aGlzLmNvbmZpZy5pbWFnZUV4dCsiKSQiLCJpIiksZmlsZUV4dDpSZWdFeHAoIi4oIit0aGlzLmNvbmZpZy5maWxlRXh0KyIpJCIsImkiKX0sdGhpcy5faW5pdExpc3RlbmVycyh0aGlzKSl9fSx7a2V5OiJfaW5pdExpc3RlbmVycyIsdmFsdWU6ZnVuY3Rpb24oZSl7LTE8dGhpcy5jb25maWcub25Ib3ZlckRlbGF5JiZkb2N1bWVudC5hZGRFdmVudExpc3RlbmVyKCJtb3VzZW92ZXIiLGUubGlzdGVuZXIuYmluZChlKSxlLmxpc3RlbmVyT3B0aW9ucyksZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcigibW91c2Vkb3duIixlLmxpc3RlbmVyLmJpbmQoZSksZS5saXN0ZW5lck9wdGlvbnMpLGRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoInRvdWNoc3RhcnQiLGUubGlzdGVuZXIuYmluZChlKSxlLmxpc3RlbmVyT3B0aW9ucyl9fSx7a2V5OiJsaXN0ZW5lciIsdmFsdWU6ZnVuY3Rpb24oZSl7dmFyIHQ9ZS50YXJnZXQuY2xvc2VzdCgiYSIpLG49dGhpcy5fcHJlcGFyZVVybCh0KTtpZihudWxsIT09bilzd2l0Y2goZS50eXBlKXtjYXNlIm1vdXNlZG93biI6Y2FzZSJ0b3VjaHN0YXJ0Ijp0aGlzLl9hZGRQcmVmZXRjaExpbmsobik7YnJlYWs7Y2FzZSJtb3VzZW92ZXIiOnRoaXMuX2Vhcmx5UHJlZmV0Y2godCxuLCJtb3VzZW91dCIpfX19LHtrZXk6Il9lYXJseVByZWZldGNoIix2YWx1ZTpmdW5jdGlvbih0LGUsbil7dmFyIGk9dGhpcyxyPXNldFRpbWVvdXQoZnVuY3Rpb24oKXtpZihyPW51bGwsMD09PWkubnVtT25Ib3ZlcilzZXRUaW1lb3V0KGZ1bmN0aW9uKCl7cmV0dXJuIGkubnVtT25Ib3Zlcj0wfSwxZTMpO2Vsc2UgaWYoaS5udW1PbkhvdmVyPmkuY29uZmlnLnJhdGVUaHJvdHRsZSlyZXR1cm47aS5udW1PbkhvdmVyKyssaS5fYWRkUHJlZmV0Y2hMaW5rKGUpfSx0aGlzLmNvbmZpZy5vbkhvdmVyRGVsYXkpO3QuYWRkRXZlbnRMaXN0ZW5lcihuLGZ1bmN0aW9uIGUoKXt0LnJlbW92ZUV2ZW50TGlzdGVuZXIobixlLHtwYXNzaXZlOiEwfSksbnVsbCE9PXImJihjbGVhclRpbWVvdXQocikscj1udWxsKX0se3Bhc3NpdmU6ITB9KX19LHtrZXk6Il9hZGRQcmVmZXRjaExpbmsiLHZhbHVlOmZ1bmN0aW9uKGkpe3JldHVybiB0aGlzLnByZWZldGNoZWQuYWRkKGkuaHJlZiksbmV3IFByb21pc2UoZnVuY3Rpb24oZSx0KXt2YXIgbj1kb2N1bWVudC5jcmVhdGVFbGVtZW50KCJsaW5rIik7bi5yZWw9InByZWZldGNoIixuLmhyZWY9aS5ocmVmLG4ub25sb2FkPWUsbi5vbmVycm9yPXQsZG9jdW1lbnQuaGVhZC5hcHBlbmRDaGlsZChuKX0pLmNhdGNoKGZ1bmN0aW9uKCl7fSl9fSx7a2V5OiJfcHJlcGFyZVVybCIsdmFsdWU6ZnVuY3Rpb24oZSl7aWYobnVsbD09PWV8fCJvYmplY3QiIT09KHZvaWQgMD09PWU/InVuZGVmaW5lZCI6cihlKSl8fCExIGluIGV8fC0xPT09WyJodHRwOiIsImh0dHBzOiJdLmluZGV4T2YoZS5wcm90b2NvbCkpcmV0dXJuIG51bGw7dmFyIHQ9ZS5ocmVmLnN1YnN0cmluZygwLHRoaXMuY29uZmlnLnNpdGVVcmwubGVuZ3RoKSxuPXRoaXMuX2dldFBhdGhuYW1lKGUuaHJlZix0KSxpPXtvcmlnaW5hbDplLmhyZWYscHJvdG9jb2w6ZS5wcm90b2NvbCxvcmlnaW46dCxwYXRobmFtZTpuLGhyZWY6dCtufTtyZXR1cm4gdGhpcy5faXNMaW5rT2soaSk/aTpudWxsfX0se2tleToiX2dldFBhdGhuYW1lIix2YWx1ZTpmdW5jdGlvbihlLHQpe3ZhciBuPXQ/ZS5zdWJzdHJpbmcodGhpcy5jb25maWcuc2l0ZVVybC5sZW5ndGgpOmU7cmV0dXJuIG4uc3RhcnRzV2l0aCgiLyIpfHwobj0iLyIrbiksdGhpcy5fc2hvdWxkQWRkVHJhaWxpbmdTbGFzaChuKT9uKyIvIjpufX0se2tleToiX3Nob3VsZEFkZFRyYWlsaW5nU2xhc2giLHZhbHVlOmZ1bmN0aW9uKGUpe3JldHVybiB0aGlzLmNvbmZpZy51c2VzVHJhaWxpbmdTbGFzaCYmIWUuZW5kc1dpdGgoIi8iKSYmIXRoaXMucmVnZXguZmlsZUV4dC50ZXN0KGUpfX0se2tleToiX2lzTGlua09rIix2YWx1ZTpmdW5jdGlvbihlKXtyZXR1cm4gbnVsbCE9PWUmJiJvYmplY3QiPT09KHZvaWQgMD09PWU/InVuZGVmaW5lZCI6cihlKSkmJighdGhpcy5wcmVmZXRjaGVkLmhhcyhlLmhyZWYpJiZlLm9yaWdpbj09PXRoaXMuY29uZmlnLnNpdGVVcmwmJi0xPT09ZS5ocmVmLmluZGV4T2YoIj8iKSYmLTE9PT1lLmhyZWYuaW5kZXhPZigiIyIpJiYhdGhpcy5yZWdleC5leGNsdWRlVXJpcy50ZXN0KGUuaHJlZikmJiF0aGlzLnJlZ2V4LmltYWdlcy50ZXN0KGUuaHJlZikpfX1dLFt7a2V5OiJydW4iLHZhbHVlOmZ1bmN0aW9uKCl7InVuZGVmaW5lZCIhPXR5cGVvZiBSb2NrZXRQcmVsb2FkTGlua3NDb25maWcmJm5ldyBuKG5ldyBSb2NrZXRCcm93c2VyQ29tcGF0aWJpbGl0eUNoZWNrZXIoe2NhcHR1cmU6ITAscGFzc2l2ZTohMH0pLFJvY2tldFByZWxvYWRMaW5rc0NvbmZpZykuaW5pdCgpfX1dKSxufSgpO3QucnVuKCk7Cn0oKSk7Cg==" data-rocket-status="executed">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script id="wc-cart-fragments-js-extra">
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_daceab7c8527f70c45103f2674baa0a4","fragment_name":"wc_fragments_daceab7c8527f70c45103f2674baa0a4","request_timeout":"5000"};
+</script>
+<script id="wc-cart-fragments-js" src="./products_files/cart-fragments.min.js" data-rocket-status="executed"></script>
+<script id="smartmenus-js" src="./products_files/jquery.smartmenus.min.js" data-rocket-status="executed"></script>
+<script id="imagesloaded-js" src="./products_files/imagesloaded.min.js" data-rocket-status="executed"></script>
+<script id="sbi_scripts-js-extra">
+var sb_instagram_js_options = {"font_method":"svg","resized_url":"https:\/\/phoenixdesertnursery.com\/wp-content\/uploads\/sb-instagram-feed-images\/","placeholder":"https:\/\/phoenixdesertnursery.com\/wp-content\/plugins\/instagram-feed\/img\/placeholder.png","ajax_url":"https:\/\/phoenixdesertnursery.com\/wp-admin\/admin-ajax.php"};
+</script>
+<script id="sbi_scripts-js" src="./products_files/sbi-scripts.min.js" data-rocket-status="executed"></script>
+<script id="elementor-webpack-runtime-js" src="./products_files/webpack.runtime.min.js" data-rocket-status="executed"></script>
+<script id="elementor-frontend-modules-js" src="./products_files/frontend-modules.min.js" data-rocket-status="executed"></script>
+<script id="elementor-waypoints-js" src="./products_files/waypoints.min.js" data-rocket-status="executed"></script>
+<script id="jquery-ui-core-js" src="./products_files/core.min.js" data-rocket-status="executed"></script>
+<script id="elementor-frontend-js-extra">
+var uael_particles_script = {"uael_particles_url":"https:\/\/phoenixdesertnursery.com\/wp-content\/plugins\/ultimate-elementor\/assets\/min-js\/uael-particles.min.js","particles_url":"https:\/\/phoenixdesertnursery.com\/wp-content\/plugins\/ultimate-elementor\/assets\/lib\/particles\/particles.min.js","snowflakes_image":"https:\/\/phoenixdesertnursery.com\/wp-content\/plugins\/ultimate-elementor\/assets\/img\/snowflake.svg","gift":"https:\/\/phoenixdesertnursery.com\/wp-content\/plugins\/ultimate-elementor\/assets\/img\/gift.png","tree":"https:\/\/phoenixdesertnursery.com\/wp-content\/plugins\/ultimate-elementor\/assets\/img\/tree.png","skull":"https:\/\/phoenixdesertnursery.com\/wp-content\/plugins\/ultimate-elementor\/assets\/img\/skull.png","ghost":"https:\/\/phoenixdesertnursery.com\/wp-content\/plugins\/ultimate-elementor\/assets\/img\/ghost.png","moon":"https:\/\/phoenixdesertnursery.com\/wp-content\/plugins\/ultimate-elementor\/assets\/img\/moon.png","bat":"https:\/\/phoenixdesertnursery.com\/wp-content\/plugins\/ultimate-elementor\/assets\/img\/bat.png","pumpkin":"https:\/\/phoenixdesertnursery.com\/wp-content\/plugins\/ultimate-elementor\/assets\/img\/pumpkin.png"};
+</script>
+<script id="elementor-frontend-js-before" src="data:text/javascript;base64,CnZhciBlbGVtZW50b3JGcm9udGVuZENvbmZpZyA9IHsiZW52aXJvbm1lbnRNb2RlIjp7ImVkaXQiOmZhbHNlLCJ3cFByZXZpZXciOmZhbHNlLCJpc1NjcmlwdERlYnVnIjpmYWxzZX0sImkxOG4iOnsic2hhcmVPbkZhY2Vib29rIjoiU2hhcmUgb24gRmFjZWJvb2siLCJzaGFyZU9uVHdpdHRlciI6IlNoYXJlIG9uIFR3aXR0ZXIiLCJwaW5JdCI6IlBpbiBpdCIsImRvd25sb2FkIjoiRG93bmxvYWQiLCJkb3dubG9hZEltYWdlIjoiRG93bmxvYWQgaW1hZ2UiLCJmdWxsc2NyZWVuIjoiRnVsbHNjcmVlbiIsInpvb20iOiJab29tIiwic2hhcmUiOiJTaGFyZSIsInBsYXlWaWRlbyI6IlBsYXkgVmlkZW8iLCJwcmV2aW91cyI6IlByZXZpb3VzIiwibmV4dCI6Ik5leHQiLCJjbG9zZSI6IkNsb3NlIiwiYTExeUNhcm91c2VsV3JhcHBlckFyaWFMYWJlbCI6IkNhcm91c2VsIHwgSG9yaXpvbnRhbCBzY3JvbGxpbmc6IEFycm93IExlZnQgJiBSaWdodCIsImExMXlDYXJvdXNlbFByZXZTbGlkZU1lc3NhZ2UiOiJQcmV2aW91cyBzbGlkZSIsImExMXlDYXJvdXNlbE5leHRTbGlkZU1lc3NhZ2UiOiJOZXh0IHNsaWRlIiwiYTExeUNhcm91c2VsRmlyc3RTbGlkZU1lc3NhZ2UiOiJUaGlzIGlzIHRoZSBmaXJzdCBzbGlkZSIsImExMXlDYXJvdXNlbExhc3RTbGlkZU1lc3NhZ2UiOiJUaGlzIGlzIHRoZSBsYXN0IHNsaWRlIiwiYTExeUNhcm91c2VsUGFnaW5hdGlvbkJ1bGxldE1lc3NhZ2UiOiJHbyB0byBzbGlkZSJ9LCJpc19ydGwiOmZhbHNlLCJicmVha3BvaW50cyI6eyJ4cyI6MCwic20iOjQ4MCwibWQiOjc2OCwibGciOjEwMjUsInhsIjoxNDQwLCJ4eGwiOjE2MDB9LCJyZXNwb25zaXZlIjp7ImJyZWFrcG9pbnRzIjp7Im1vYmlsZSI6eyJsYWJlbCI6Ik1vYmlsZSBQb3J0cmFpdCIsInZhbHVlIjo3NjcsImRlZmF1bHRfdmFsdWUiOjc2NywiZGlyZWN0aW9uIjoibWF4IiwiaXNfZW5hYmxlZCI6dHJ1ZX0sIm1vYmlsZV9leHRyYSI6eyJsYWJlbCI6Ik1vYmlsZSBMYW5kc2NhcGUiLCJ2YWx1ZSI6ODgwLCJkZWZhdWx0X3ZhbHVlIjo4ODAsImRpcmVjdGlvbiI6Im1heCIsImlzX2VuYWJsZWQiOmZhbHNlfSwidGFibGV0Ijp7ImxhYmVsIjoiVGFibGV0IFBvcnRyYWl0IiwidmFsdWUiOjEwMjQsImRlZmF1bHRfdmFsdWUiOjEwMjQsImRpcmVjdGlvbiI6Im1heCIsImlzX2VuYWJsZWQiOnRydWV9LCJ0YWJsZXRfZXh0cmEiOnsibGFiZWwiOiJUYWJsZXQgTGFuZHNjYXBlIiwidmFsdWUiOjEyMDAsImRlZmF1bHRfdmFsdWUiOjEyMDAsImRpcmVjdGlvbiI6Im1heCIsImlzX2VuYWJsZWQiOmZhbHNlfSwibGFwdG9wIjp7ImxhYmVsIjoiTGFwdG9wIiwidmFsdWUiOjEzNjYsImRlZmF1bHRfdmFsdWUiOjEzNjYsImRpcmVjdGlvbiI6Im1heCIsImlzX2VuYWJsZWQiOmZhbHNlfSwid2lkZXNjcmVlbiI6eyJsYWJlbCI6IldpZGVzY3JlZW4iLCJ2YWx1ZSI6MjQwMCwiZGVmYXVsdF92YWx1ZSI6MjQwMCwiZGlyZWN0aW9uIjoibWluIiwiaXNfZW5hYmxlZCI6ZmFsc2V9fX0sInZlcnNpb24iOiIzLjE5LjAiLCJpc19zdGF0aWMiOmZhbHNlLCJleHBlcmltZW50YWxGZWF0dXJlcyI6eyJlX29wdGltaXplZF9hc3NldHNfbG9hZGluZyI6dHJ1ZSwiYWRkaXRpb25hbF9jdXN0b21fYnJlYWtwb2ludHMiOnRydWUsInRoZW1lX2J1aWxkZXJfdjIiOnRydWUsImJsb2NrX2VkaXRvcl9hc3NldHNfb3B0aW1pemUiOnRydWUsImFpLWxheW91dCI6dHJ1ZSwibGFuZGluZy1wYWdlcyI6dHJ1ZSwiZV9pbWFnZV9sb2FkaW5nX29wdGltaXphdGlvbiI6dHJ1ZSwiZV9nbG9iYWxfc3R5bGVndWlkZSI6dHJ1ZSwicGFnZS10cmFuc2l0aW9ucyI6dHJ1ZSwibm90ZXMiOnRydWUsImZvcm0tc3VibWlzc2lvbnMiOnRydWUsImVfc2Nyb2xsX3NuYXAiOnRydWV9LCJ1cmxzIjp7ImFzc2V0cyI6Imh0dHBzOlwvXC9waG9lbml4ZGVzZXJ0bnVyc2VyeS5jb21cL3dwLWNvbnRlbnRcL3BsdWdpbnNcL2VsZW1lbnRvclwvYXNzZXRzXC8ifSwic3dpcGVyQ2xhc3MiOiJzd2lwZXItY29udGFpbmVyIiwic2V0dGluZ3MiOnsicGFnZSI6W10sImVkaXRvclByZWZlcmVuY2VzIjpbXX0sImtpdCI6eyJib2R5X2JhY2tncm91bmRfYmFja2dyb3VuZCI6ImNsYXNzaWMiLCJhY3RpdmVfYnJlYWtwb2ludHMiOlsidmlld3BvcnRfbW9iaWxlIiwidmlld3BvcnRfdGFibGV0Il0sImdsb2JhbF9pbWFnZV9saWdodGJveCI6InllcyIsImxpZ2h0Ym94X2VuYWJsZV9jb3VudGVyIjoieWVzIiwibGlnaHRib3hfZW5hYmxlX2Z1bGxzY3JlZW4iOiJ5ZXMiLCJsaWdodGJveF9lbmFibGVfem9vbSI6InllcyIsImxpZ2h0Ym94X2VuYWJsZV9zaGFyZSI6InllcyIsImxpZ2h0Ym94X3RpdGxlX3NyYyI6InRpdGxlIiwibGlnaHRib3hfZGVzY3JpcHRpb25fc3JjIjoiZGVzY3JpcHRpb24iLCJ3b29jb21tZXJjZV9ub3RpY2VzX2VsZW1lbnRzIjpbXX0sInBvc3QiOnsiaWQiOjMxODIsInRpdGxlIjoiUGhvZW5peCUyMERlc2VydCUyME51cnNlcnklMjAtJTIwT3ZlciUyMDMlMjBhY3JlcyUyMG9mJTIwY2FjdGklMkMlMjBzdWNjdWxlbnRzJTIwYW5kJTIwZGVzZXJ0JTIwcGxhbnRzJTJDJTIwYmFzZWQlMjBpbiUyMFBob2VuaXglMkMlMjBBcml6b25hIiwiZXhjZXJwdCI6IiIsImZlYXR1cmVkSW1hZ2UiOmZhbHNlfX07Cg==" data-rocket-status="executed">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.19.0","is_static":false,"experimentalFeatures":{"e_optimized_assets_loading":true,"additional_custom_breakpoints":true,"theme_builder_v2":true,"block_editor_assets_optimize":true,"ai-layout":true,"landing-pages":true,"e_image_loading_optimization":true,"e_global_styleguide":true,"page-transitions":true,"notes":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/phoenixdesertnursery.com\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper-container","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","woocommerce_notices_elements":[]},"post":{"id":3182,"title":"Phoenix%20Desert%20Nursery%20-%20Over%203%20acres%20of%20cacti%2C%20succulents%20and%20desert%20plants%2C%20based%20in%20Phoenix%2C%20Arizona","excerpt":"","featuredImage":false}};
+</script>
+<script id="elementor-frontend-js" src="./products_files/frontend.min.js" data-rocket-status="executed"></script>
+<script id="elementor-frontend-js-after" src="data:text/javascript;base64,CndpbmRvdy5zY29wZV9hcnJheSA9IFtdOwoJCQkJCQkJCXdpbmRvdy5iYWNrZW5kID0gMDsKCQkJCQkJCQlqUXVlcnkuY2FjaGVkU2NyaXB0ID0gZnVuY3Rpb24oIHVybCwgb3B0aW9ucyApIHsKCQkJCQkJCQkJLy8gQWxsb3cgdXNlciB0byBzZXQgYW55IG9wdGlvbiBleGNlcHQgZm9yIGRhdGFUeXBlLCBjYWNoZSwgYW5kIHVybC4KCQkJCQkJCQkJb3B0aW9ucyA9IGpRdWVyeS5leHRlbmQoIG9wdGlvbnMgfHwge30sIHsKCQkJCQkJCQkJCWRhdGFUeXBlOiAic2NyaXB0IiwKCQkJCQkJCQkJCWNhY2hlOiB0cnVlLAoJCQkJCQkJCQkJdXJsOiB1cmwKCQkJCQkJCQkJfSk7CgkJCQkJCQkJCS8vIFJldHVybiB0aGUganFYSFIgb2JqZWN0IHNvIHdlIGNhbiBjaGFpbiBjYWxsYmFja3MuCgkJCQkJCQkJCXJldHVybiBqUXVlcnkuYWpheCggb3B0aW9ucyApOwoJCQkJCQkJCX07CgkJCQkJCQkgICAgalF1ZXJ5KCB3aW5kb3cgKS5vbiggImVsZW1lbnRvci9mcm9udGVuZC9pbml0IiwgZnVuY3Rpb24oKSB7CgkJCQkJCQkJCWVsZW1lbnRvckZyb250ZW5kLmhvb2tzLmFkZEFjdGlvbiggImZyb250ZW5kL2VsZW1lbnRfcmVhZHkvZ2xvYmFsIiwgZnVuY3Rpb24oICRzY29wZSwgJCApewoJCQkJCQkJCQkJaWYgKCAidW5kZWZpbmVkIiA9PSB0eXBlb2YgJHNjb3BlICkgewoJCQkJCQkJCQkJCQlyZXR1cm47CgkJCQkJCQkJCQl9CgkJCQkJCQkJCQlpZiAoICRzY29wZS5oYXNDbGFzcyggInVhZWwtcGFydGljbGUteWVzIiApICkgewoJCQkJCQkJCQkJCXdpbmRvdy5zY29wZV9hcnJheS5wdXNoKCAkc2NvcGUgKTsKCQkJCQkJCQkJCQkkc2NvcGUuZmluZCgiLnVhZWwtcGFydGljbGUtd3JhcHBlciIpLmFkZENsYXNzKCJqcy1pcy1lbmFibGVkIik7CgkJCQkJCQkJCQl9ZWxzZXsKCQkJCQkJCQkJCQlyZXR1cm47CgkJCQkJCQkJCQl9CgkJCQkJCQkJCQlpZihlbGVtZW50b3JGcm9udGVuZC5pc0VkaXRNb2RlKCkgJiYgJHNjb3BlLmZpbmQoIi51YWVsLXBhcnRpY2xlLXdyYXBwZXIiKS5oYXNDbGFzcygianMtaXMtZW5hYmxlZCIpICYmIHdpbmRvdy5iYWNrZW5kID09IDAgKXsKCQkJCQkJCQkJCQl2YXIgdWFlbF91cmwgPSB1YWVsX3BhcnRpY2xlc19zY3JpcHQudWFlbF9wYXJ0aWNsZXNfdXJsOwoKCQkJCQkJCQkJCQlqUXVlcnkuY2FjaGVkU2NyaXB0KCB1YWVsX3VybCApOwoJCQkJCQkJCQkJCXdpbmRvdy5iYWNrZW5kID0gMTsKCQkJCQkJCQkJCX1lbHNlIGlmKGVsZW1lbnRvckZyb250ZW5kLmlzRWRpdE1vZGUoKSl7CgkJCQkJCQkJCQkJdmFyIHVhZWxfdXJsID0gdWFlbF9wYXJ0aWNsZXNfc2NyaXB0LnVhZWxfcGFydGljbGVzX3VybDsKCQkJCQkJCQkJCQlqUXVlcnkuY2FjaGVkU2NyaXB0KCB1YWVsX3VybCApLmRvbmUoZnVuY3Rpb24oKXsKCQkJCQkJCQkJCQkJdmFyIGZsYWcgPSB0cnVlOwoJCQkJCQkJCQkJCX0pOwoJCQkJCQkJCQkJfQoJCQkJCQkJCQl9KTsKCQkJCQkJCQl9KTsKCQkJCQkJCQkgalF1ZXJ5KCBkb2N1bWVudCApLm9uKCAicmVhZHkgZWxlbWVudG9yL3BvcHVwL3Nob3ciLCAoKSA9PiB7CgkJCQkJCQkJCWlmICggalF1ZXJ5LmZpbmQoICIudWFlbC1wYXJ0aWNsZS15ZXMiICkubGVuZ3RoIDwgMSApIHsKCQkJCQkJCQkJCXJldHVybjsKCQkJCQkJCQkJfQoJCQkJCQkJCQl2YXIgdWFlbF91cmwgPSB1YWVsX3BhcnRpY2xlc19zY3JpcHQudWFlbF9wYXJ0aWNsZXNfdXJsOwoJCQkJCQkJCQlqUXVlcnkuY2FjaGVkU2NyaXB0ID0gZnVuY3Rpb24oIHVybCwgb3B0aW9ucyApIHsKCQkJCQkJCQkJCS8vIEFsbG93IHVzZXIgdG8gc2V0IGFueSBvcHRpb24gZXhjZXB0IGZvciBkYXRhVHlwZSwgY2FjaGUsIGFuZCB1cmwuCgkJCQkJCQkJCQlvcHRpb25zID0galF1ZXJ5LmV4dGVuZCggb3B0aW9ucyB8fCB7fSwgewoJCQkJCQkJCQkJCWRhdGFUeXBlOiAic2NyaXB0IiwKCQkJCQkJCQkJCQljYWNoZTogdHJ1ZSwKCQkJCQkJCQkJCQl1cmw6IHVybAoJCQkJCQkJCQkJfSk7CgkJCQkJCQkJCQkvLyBSZXR1cm4gdGhlIGpxWEhSIG9iamVjdCBzbyB3ZSBjYW4gY2hhaW4gY2FsbGJhY2tzLgoJCQkJCQkJCQkJcmV0dXJuIGpRdWVyeS5hamF4KCBvcHRpb25zICk7CgkJCQkJCQkJCX07CgkJCQkJCQkJCWpRdWVyeS5jYWNoZWRTY3JpcHQoIHVhZWxfdXJsICk7CgkJCQkJCQkJfSk7CQo=" data-rocket-status="executed">
+window.scope_array = [];
+								window.backend = 0;
+								jQuery.cachedScript = function( url, options ) {
+									// Allow user to set any option except for dataType, cache, and url.
+									options = jQuery.extend( options || {}, {
+										dataType: "script",
+										cache: true,
+										url: url
+									});
+									// Return the jqXHR object so we can chain callbacks.
+									return jQuery.ajax( options );
+								};
+							    jQuery( window ).on( "elementor/frontend/init", function() {
+									elementorFrontend.hooks.addAction( "frontend/element_ready/global", function( $scope, $ ){
+										if ( "undefined" == typeof $scope ) {
+												return;
+										}
+										if ( $scope.hasClass( "uael-particle-yes" ) ) {
+											window.scope_array.push( $scope );
+											$scope.find(".uael-particle-wrapper").addClass("js-is-enabled");
+										}else{
+											return;
+										}
+										if(elementorFrontend.isEditMode() && $scope.find(".uael-particle-wrapper").hasClass("js-is-enabled") && window.backend == 0 ){
+											var uael_url = uael_particles_script.uael_particles_url;
+
+											jQuery.cachedScript( uael_url );
+											window.backend = 1;
+										}else if(elementorFrontend.isEditMode()){
+											var uael_url = uael_particles_script.uael_particles_url;
+											jQuery.cachedScript( uael_url ).done(function(){
+												var flag = true;
+											});
+										}
+									});
+								});
+								 jQuery( document ).on( "ready elementor/popup/show", () => {
+									if ( jQuery.find( ".uael-particle-yes" ).length < 1 ) {
+										return;
+									}
+									var uael_url = uael_particles_script.uael_particles_url;
+									jQuery.cachedScript = function( url, options ) {
+										// Allow user to set any option except for dataType, cache, and url.
+										options = jQuery.extend( options || {}, {
+											dataType: "script",
+											cache: true,
+											url: url
+										});
+										// Return the jqXHR object so we can chain callbacks.
+										return jQuery.ajax( options );
+									};
+									jQuery.cachedScript( uael_url );
+								});	
+</script>
+<script id="ecspro-js" src="./products_files/ecspro.js" data-rocket-status="executed"></script>
+<script id="elementor-pro-webpack-runtime-js" src="./products_files/webpack-pro.runtime.min.js" data-rocket-status="executed"></script>
+<script id="wp-i18n-js" src="./products_files/i18n.min.js" data-rocket-status="executed"></script>
+<script id="wp-i18n-js-after" src="data:text/javascript;base64,CndwLmkxOG4uc2V0TG9jYWxlRGF0YSggeyAndGV4dCBkaXJlY3Rpb25cdTAwMDRsdHInOiBbICdsdHInIF0gfSApOwo=" data-rocket-status="executed">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id="elementor-pro-frontend-js-before" src="data:text/javascript;base64,CnZhciBFbGVtZW50b3JQcm9Gcm9udGVuZENvbmZpZyA9IHsiYWpheHVybCI6Imh0dHBzOlwvXC9waG9lbml4ZGVzZXJ0bnVyc2VyeS5jb21cL3dwLWFkbWluXC9hZG1pbi1hamF4LnBocCIsIm5vbmNlIjoiOGE0NjYzNjk1ZSIsInVybHMiOnsiYXNzZXRzIjoiaHR0cHM6XC9cL3Bob2VuaXhkZXNlcnRudXJzZXJ5LmNvbVwvd3AtY29udGVudFwvcGx1Z2luc1wvZWxlbWVudG9yLXByb1wvYXNzZXRzXC8iLCJyZXN0IjoiaHR0cHM6XC9cL3Bob2VuaXhkZXNlcnRudXJzZXJ5LmNvbVwvd3AtanNvblwvIn0sInNoYXJlQnV0dG9uc05ldHdvcmtzIjp7ImZhY2Vib29rIjp7InRpdGxlIjoiRmFjZWJvb2siLCJoYXNfY291bnRlciI6dHJ1ZX0sInR3aXR0ZXIiOnsidGl0bGUiOiJUd2l0dGVyIn0sImxpbmtlZGluIjp7InRpdGxlIjoiTGlua2VkSW4iLCJoYXNfY291bnRlciI6dHJ1ZX0sInBpbnRlcmVzdCI6eyJ0aXRsZSI6IlBpbnRlcmVzdCIsImhhc19jb3VudGVyIjp0cnVlfSwicmVkZGl0Ijp7InRpdGxlIjoiUmVkZGl0IiwiaGFzX2NvdW50ZXIiOnRydWV9LCJ2ayI6eyJ0aXRsZSI6IlZLIiwiaGFzX2NvdW50ZXIiOnRydWV9LCJvZG5va2xhc3NuaWtpIjp7InRpdGxlIjoiT0siLCJoYXNfY291bnRlciI6dHJ1ZX0sInR1bWJsciI6eyJ0aXRsZSI6IlR1bWJsciJ9LCJkaWdnIjp7InRpdGxlIjoiRGlnZyJ9LCJza3lwZSI6eyJ0aXRsZSI6IlNreXBlIn0sInN0dW1ibGV1cG9uIjp7InRpdGxlIjoiU3R1bWJsZVVwb24iLCJoYXNfY291bnRlciI6dHJ1ZX0sIm1peCI6eyJ0aXRsZSI6Ik1peCJ9LCJ0ZWxlZ3JhbSI6eyJ0aXRsZSI6IlRlbGVncmFtIn0sInBvY2tldCI6eyJ0aXRsZSI6IlBvY2tldCIsImhhc19jb3VudGVyIjp0cnVlfSwieGluZyI6eyJ0aXRsZSI6IlhJTkciLCJoYXNfY291bnRlciI6dHJ1ZX0sIndoYXRzYXBwIjp7InRpdGxlIjoiV2hhdHNBcHAifSwiZW1haWwiOnsidGl0bGUiOiJFbWFpbCJ9LCJwcmludCI6eyJ0aXRsZSI6IlByaW50In19LCJ3b29jb21tZXJjZSI6eyJtZW51X2NhcnQiOnsiY2FydF9wYWdlX3VybCI6Imh0dHBzOlwvXC9waG9lbml4ZGVzZXJ0bnVyc2VyeS5jb21cL2NhcnRcLyIsImNoZWNrb3V0X3BhZ2VfdXJsIjoiaHR0cHM6XC9cL3Bob2VuaXhkZXNlcnRudXJzZXJ5LmNvbVwvY2hlY2tvdXRcLyIsImZyYWdtZW50c19ub25jZSI6IjY3ZWY3NGNjZWYifX0sImZhY2Vib29rX3NkayI6eyJsYW5nIjoiZW5fVVMiLCJhcHBfaWQiOiIifSwibG90dGllIjp7ImRlZmF1bHRBbmltYXRpb25VcmwiOiJodHRwczpcL1wvcGhvZW5peGRlc2VydG51cnNlcnkuY29tXC93cC1jb250ZW50XC9wbHVnaW5zXC9lbGVtZW50b3ItcHJvXC9tb2R1bGVzXC9sb3R0aWVcL2Fzc2V0c1wvYW5pbWF0aW9uc1wvZGVmYXVsdC5qc29uIn19Owo=" data-rocket-status="executed">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/phoenixdesertnursery.com\/wp-admin\/admin-ajax.php","nonce":"8a4663695e","urls":{"assets":"https:\/\/phoenixdesertnursery.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/phoenixdesertnursery.com\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"woocommerce":{"menu_cart":{"cart_page_url":"https:\/\/phoenixdesertnursery.com\/cart\/","checkout_page_url":"https:\/\/phoenixdesertnursery.com\/checkout\/","fragments_nonce":"67ef74ccef"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/phoenixdesertnursery.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script id="elementor-pro-frontend-js" src="./products_files/frontend(2).min.js" data-rocket-status="executed"></script>
+<script id="pro-elements-handlers-js" src="./products_files/elements-handlers.min.js" data-rocket-status="executed"></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async="" src="./products_files/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt){var t='<img data-lazy-src="https://i.ytimg.com/vi_webp/ID/hqdefault.webp" alt="" width="480" height="360"><noscript><img loading="lazy" src="https://i.ytimg.com/vi_webp/ID/hqdefault.webp" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?'':'&'+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var e,t,p,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt),a[t].appendChild(e),p=e.querySelector('.play'),p.onclick=lazyLoadYoutubeIframe});</script>
+<script>class RocketElementorAnimation{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}_detectAnimations(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this._listAnimationSettingsKeys(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this._animateElement(t)}catch(t){}})}_animateElement(t){const e=JSON.parse(t.dataset.settings),i=e._animation_delay||e.animation_delay||0,n=e[this.animationSettingKeys.find(t=>e[t])];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let s=setTimeout(()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this._removeAnimationSettings(t,e)},i);window.addEventListener("rocket-startLoading",function(){clearTimeout(s)})}_listAnimationSettingsKeys(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach(t=>{e.forEach(e=>{i.push(t+e)})}),i}_removeAnimationSettings(t,e){this._listAnimationSettingsKeys().forEach(t=>delete e[t]),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorAnimation;requestAnimationFrame(t._detectAnimations.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorAnimation.run);</script>
+
+
+<span id="elementor-device-mode-wpr" class="elementor-screen-only"></span><span id="elementor-device-mode" class="elementor-screen-only"></span><svg style="display: none;" class="e-font-icon-svg-symbols"></svg><script src="./products_files/dialog.min.js"></script><script src="./products_files/swiper.min.js"></script></body></html>
